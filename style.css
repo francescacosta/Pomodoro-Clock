@@ -10,6 +10,14 @@
   background: #FFE2E2;
 }
 
+.top-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
 .daily-goal {
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
