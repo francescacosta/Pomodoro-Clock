@@ -9,3 +9,13 @@
   flex-direction: column;
   background: #FFE2E2;
 }
+
+.daily-goal {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: #FFFFFF;
+  letter-spacing: 1.39px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
