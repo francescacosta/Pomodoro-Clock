@@ -37,3 +37,36 @@
   padding-top: 15px;
 }
 
+.timer-container {
+  background-color: #bd3c60;
+  width: 100%;
+  height: 190px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.timer {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 1.39px;
+}
+
+.countdown {
+  font-family: 'Roboto', sans-serif;
+  font-size: 100px;
+  color: #FFFFFF;
+  letter-spacing: 1.39px;
+  font-weight: 300;
+  padding-top: 20px;
+}
+
+.green-container {
+  background-color: #71AF69;
+  width: 100%;
+  height: 150px;
+}
