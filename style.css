@@ -80,6 +80,11 @@
   font-weight: 500;
 }
 
+.break-text-margin {
+  margin-left: 130px;
+}
+
+
 .green-container {
   background-color: #71AF69;
   width: 100%;
