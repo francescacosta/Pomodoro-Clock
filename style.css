@@ -65,6 +65,22 @@
   padding-top: 20px;
 }
 
+.text-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.green-container-text {
+  padding-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #FFFFFF;
+  letter-spacing: 1.25px;
+  font-weight: 500;
+}
+
 .green-container {
   background-color: #71AF69;
   width: 100%;
