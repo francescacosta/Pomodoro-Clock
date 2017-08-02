@@ -87,6 +87,13 @@
   height: 150px;
 }
 
+.timer-arrow-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-right: 45px;
+}
+
 .pomodoro-box-flex {
   display: flex;
   flex-direction: row;
@@ -105,4 +112,16 @@
   color: #4A4A4A;
   text-align: center;
   margin-left: 5px;
+}
+
+.arrow-flex {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.arrow {
+  cursor: pointer;
+  padding-bottom: 10px;
 }
