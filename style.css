@@ -221,3 +221,13 @@ hr {
 .daily-goal-settings {
   padding-right: 30px;
 }
+
+.red-text {
+  padding-top: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #bd3c60;
+  letter-spacing: 1.25px;
+  font-weight: 500;
+  width: 100%;
+}
