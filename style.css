@@ -87,13 +87,7 @@ hr {
   width: 100%;
 }
 
-.pomodoro-text-margin {
-  margin-left: 26px;
-}
 
-.break-text-margin {
-  margin-right: 60px;
-}
 
 
 .green-container {
@@ -250,4 +244,16 @@ hr {
   padding-top: 10px;
   padding-left: 20px;
 
+}
+
+.red-text-flex {
+  display: flex;
+}
+
+.red-pomodoro-text-margin {
+  margin-left: 31px;
+}
+
+.red-break-text-margin {
+  margin-right: 25px;
 }
