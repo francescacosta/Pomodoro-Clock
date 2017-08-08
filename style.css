@@ -231,3 +231,15 @@ hr {
   font-weight: 500;
   width: 100%;
 }
+
+.pomodoro-box-red {
+  width: 48px;
+  height: 59px;
+  background-color: #bd3c60;
+  border-radius: 3px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin-left: 5px;
+}
