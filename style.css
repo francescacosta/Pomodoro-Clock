@@ -13,7 +13,6 @@ hr {
   display: flex;
   flex-direction: column;
   background: #FFE2E2;
-  display: none;
 }
 
 .top-container {
@@ -144,12 +143,14 @@ hr {
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
+  display: none;
 }
 
 .settings-container {
   background-color: #bd3c60;
   width: 100%;
   height: 140px;
+  padding-top: 10px;
 }
 
 .settings-arrow {
@@ -270,4 +271,12 @@ hr {
 
 .tomato-family {
   margin-top: 40px;
+}
+
+.back-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  color: white;
+  cursor: pointer;
+  padding-left: 10px;
 }
