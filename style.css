@@ -283,3 +283,12 @@ hr {
   cursor: pointer;
   padding-left: 10px;
 }
+
+.timer-row-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.timer-cancel-button {
+  cursor: pointer;
+}
