@@ -19,3 +19,7 @@ backButton.onclick = function() {
 timerCancelButton.onclick = function() {
   timer.innerHTML = "00:00";
 }
+
+// POMODORO TIMER
+var upArrow = document.getElementsByClassName('arrow1')[0];
+var downArrow =
