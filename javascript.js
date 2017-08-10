@@ -21,5 +21,15 @@ timerCancelButton.onclick = function() {
 }
 
 // POMODORO TIMER
-var upArrow = document.getElementsByClassName('arrow1')[0];
-var downArrow =
+var upArrow = document.getElementsByClassName('pomodoro-arrow-up')[0];
+var downArrow = document.getElementsByClassName('pomodoro-arrow-down')[0];
+var pomodoroTimer = '0'
+
+var increaseTimer = function(value) {
+   pomodoroTimer +=1;
+}
+
+upArrow.onclick = function() {
+  increaseTimer();
+  console.log(pomodoroTimer);
+}
