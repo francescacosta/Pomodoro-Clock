@@ -31,6 +31,10 @@ var pomodoroInput2 = document.getElementsByClassName('pomodoro-input-2')[0];
 
 var increaseTimer = function(value) {
    pomodoroTimer += 1;
+
+   if (pomodoroTimer = 99) {
+     return;
+   };
 }
 
 upArrow.onclick = function() {
@@ -45,7 +49,7 @@ var decreaseTimer = function(value) {
 
    if (pomodoroTimer = 0) {
      return;
-   }
+   };
 }
 
 downArrow.onclick = function() {
