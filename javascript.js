@@ -58,3 +58,12 @@ downArrow.onclick = function() {
   pomodoroInput1.innerHTML = pomodoroTimer
 
 }
+
+// BREAK TIMER
+
+var breakUpArrow = document.getElementsByClassName('break-arrow-up')[0];
+var breakDownArrow = document.getElementsByClassName('break-arrow-down')[0];
+var breakTimer = 0
+
+var breakInput1 = document.getElementsByClassName('break-input-1')[0];
+var breakInput2 = document.getElementsByClassName('break-input-2')[0];
