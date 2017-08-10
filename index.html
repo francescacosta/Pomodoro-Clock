@@ -1,209 +1,254 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Pomodoro Timer</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+  <title>Pomodoro Timer</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 </head>
 
 <body>
+  <div class="app-display"> <!-- App-display open-->
     <div class="app">
-        <div class="top-container">
-            <span class="daily-goal">DAILY GOAL: 5/10</span>
-            <svg class="settings-cog" width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Idea1" transform="translate(-354.000000, -15.000000)" fill="#FFFFFF">
-                        <g id="settings" transform="translate(354.000000, 15.000000)">
-                            <path d="M5.83666667,19.8333333 C6.035,21.1366667 6.34666667,22.2983333 6.8,23.29 L2.295,27.795 L6.205,31.705 L10.71,27.2 C11.7016667,27.6533333 12.8633333,27.965 14.1666667,28.135 L14.1666667,28.3333333 L14.1666667,34 L19.8333333,34 L19.8333333,28.3333333 L19.8333333,28.135 C21.1366667,27.965 22.2983333,27.6533333 23.29,27.2 L27.795,31.705 L31.705,27.795 L27.1716667,23.29 C27.6533333,22.2983333 27.965,21.1366667 28.135,19.8333333 L31.1666667,19.8333333 L34,19.8333333 L34,14.1666667 L31.1666667,14.1666667 L28.135,14.1666667 C27.965,12.8633333 27.6533333,11.7016667 27.1716667,10.71 L31.705,6.205 L27.795,2.295 L23.29,6.8 C22.2983333,6.34666667 21.1366667,6.035 19.8333333,5.83666667 L19.8333333,5.66666667 L19.8333333,0 L14.1666667,0 L14.1666667,5.66666667 L14.1666667,5.83666667 C12.8633333,6.035 11.7016667,6.34666667 10.71,6.8 L6.205,2.295 L2.295,6.205 L6.8,10.71 C6.34666667,11.7016667 6.035,12.8633333 5.83666667,14.1666667 L0,14.1666667 L0,19.8333333 L5.83666667,19.8333333 L5.83666667,19.8333333 Z M11.3333333,19.125 L11.3333333,14.875 L14.875,11.3333333 L19.125,11.3333333 L22.6666667,14.875 L22.6666667,19.125 L19.125,22.6666667 L14.875,22.6666667 L11.3333333,19.125 L11.3333333,19.125 Z" id="Shape"></path>
-                        </g>
-                   </g>
-               </g>
-            </svg>
-        </div>
-
-        <svg class="tomato-1" width="239px" height="275px" viewBox="0 0 239 275" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <defs>
-            <polygon id="path-1" points="20.9941406 24.1015625 14.140625 9.24804688 36.8613281 16.6748047 52.2597656 0.1484375 64.125 16.6748047 77.2890625 9.24804688 73.7382812 24.1015625"></polygon>
-            <linearGradient x1="50%" y1="0%" x2="50%" y2="98.2800542%" id="linearGradient-2">
-                <stop stop-color="#EB6464" offset="0%"></stop>
-                <stop stop-color="#AD0A38" offset="100%"></stop>
-            </linearGradient>
-            </defs>
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="Idea1" transform="translate(-90.000000, -64.000000)">
-                    <g id="Group" transform="translate(90.000000, 64.000000)">
-                        <g id="Tomato-/-Cartoon-/-Girl" transform="translate(14.000000, 49.000000)">
-                             <g id="crown" stroke-width="1" fill-rule="evenodd" transform="translate(56.000000, 9.000000)" stroke="#4A4A4A">
-                                <g id="Path-3">
-                                    <use stroke-width="1" fill="#23A613" fill-rule="evenodd" xlink:href="#path-1"></use>
-                                    <use stroke-width="3" xlink:href="#path-1"></use>
-                               </g>
-                               <polygon id="Triangle" stroke-width="3" fill="#23A613" transform="translate(79.268950, 24.445862) rotate(34.000000) translate(-79.268950, -24.445862) " points="79.2689502 8.44586247 86.2689502 40.4458625 72.2689502 40.4458625"></polygon>
-                               <polygon id="Triangle" stroke-width="3" fill="#23A613" transform="translate(14.750349, 24.178951) scale(-1, 1) rotate(34.000000) translate(-14.750349, -24.178951) " points="14.7503495 8.17895149 21.7503495 40.1789515 7.75034946 40.1789515"></polygon>
-                           </g>
-                           <ellipse id="Oval" stroke="#4A4A4A" stroke-width="4" fill="url(#linearGradient-2)" fill-rule="evenodd" cx="103.230469" cy="114.144605" rx="103.230469" ry="82.1446052"></ellipse>
-                               <g id="Eyelash-Right" stroke-width="1" fill-rule="evenodd" transform="translate(127.000000, 75.000000)" stroke="#4A4A4A">
-                                   <path d="M1,10.335017 C7.62788658,12.2235804 10.5950331,9.44524139 9.90143961,2" id="Path-5" stroke-width="2" transform="translate(5.500000, 6.454102) rotate(10.000000) translate(-5.500000, -6.454102) "></path>
-                                   <path d="M6.70508151,10.048766 C13.3329681,11.9373294 16.3001146,9.15899038 15.6065211,1.71374899" id="Path-5" stroke-width="2" transform="translate(11.205082, 6.167851) rotate(32.000000) translate(-11.205082, -6.167851) "></path>
-                                   <path d="M8.1632349,16.7240559 C16.025772,19.9040969 19.5456422,15.225815 18.7228452,2.68921036" id="Path-5" stroke-width="2" transform="translate(13.501500, 10.189210) rotate(48.000000) translate(-13.501500, -10.189210) "></path>
-                              </g>
-                              <g id="Eyelash-Left" stroke-width="1" fill-rule="evenodd" transform="translate(60.500000, 84.000000) scale(-1, 1) translate(-60.500000, -84.000000) translate(49.000000, 74.000000)" stroke="#4A4A4A">
-                                  <path d="M1,10.335017 C7.62788658,12.2235804 10.5950331,9.44524139 9.90143961,2" id="Path-5" stroke-width="2" transform="translate(5.500000, 6.454102) rotate(10.000000) translate(-5.500000, -6.454102) "></path>
-                                  <path d="M6.70508151,10.048766 C13.3329681,11.9373294 16.3001146,9.15899038 15.6065211,1.71374899" id="Path-5" stroke-width="2" transform="translate(11.205082, 6.167851) rotate(32.000000) translate(-11.205082, -6.167851) "></path>
-                                  <path d="M8.1632349,16.7240559 C16.025772,19.9040969 19.5456422,15.225815 18.7228452,2.68921036" id="Path-5" stroke-width="2" transform="translate(13.501500, 10.189210) rotate(48.000000) translate(-13.501500, -10.189210) "></path>
-                            </g>
-                            <g id="Eyes" stroke-width="1" fill-rule="evenodd" transform="translate(52.000000, 79.000000)">
-                                <circle id="Oval-2" fill="#FFFFFF" cx="13.8847656" cy="13.8847656" r="13.8847656"></circle>
-                                <circle id="Oval-2" fill="#4A4A4A" cx="14.6337891" cy="17.6337891" r="5.63378906"></circle>
-                                <circle id="Oval-2" fill="#FFFFFF" cx="81.8066406" cy="14.8066406" r="12.8066406"></circle>
-                                <path d="M81.6337891,23.2675781 C84.7452448,23.2675781 87.2675781,20.7452448 87.2675781,17.6337891 C87.2675781,14.5223333 84.7452448,12 81.6337891,12 C78.5223333,12 76,14.5223333 76,17.6337891 C76,20.7452448 78.5223333,23.2675781 81.6337891,23.2675781 Z" id="Oval-2" fill="#4A4A4A"></path>
-                           </g>
-                           <ellipse id="Oval-3" fill-opacity="0.780000031" fill="#DDC3C3" fill-rule="nonzero" cx="102.946289" cy="219.27832" rx="40.5400391" ry="6.02079788"></ellipse>
-                           <g id="blush" stroke-width="1" fill-rule="evenodd" transform="translate(47.000000, 111.000000)" fill="#FF8686">
-                              <ellipse id="Oval-4" transform="translate(12.000000, 2.500000) scale(1, -1) translate(-12.000000, -2.500000) " cx="12" cy="2.5" rx="12" ry="2.5"></ellipse>
-                              <ellipse id="Oval-4" transform="translate(92.000000, 3.500000) scale(1, -1) translate(-92.000000, -3.500000) " cx="92" cy="3.5" rx="12" ry="2.5"></ellipse>
-                          </g>
-                          <path d="" id="Path-2" stroke="#979797" stroke-width="1"></path>
-                          <path d="M87,133 L101.357422,133 L119.123047,133 C112.951497,143.714844 107.597656,149.072266 103.061523,149.072266 C98.5253906,149.072266 93.1715495,143.714844 87,133 Z" id="Path-4" stroke="#4A4A4A" stroke-width="3" fill="#FFFFFF" fill-rule="evenodd"></path>
-                  </g>
-                  <path d="M162.966853,24.5177659 L166.830557,25.5530421 L155.701338,67.0878526 L151.837634,66.0525764 L162.966853,24.5177659 Z M236.158427,73.1476209 L238.83495,76.1202002 L206.879722,104.892816 L204.2032,101.920237 L236.158427,73.1476209 Z M0.755623312,69.3901906 L3.32677375,66.3260128 L36.2666848,93.96588 L33.6955344,97.0300578 L0.755623312,69.3901906 Z M75.1096879,23.236068 L78.913914,22 L92.2016447,62.8954302 L88.3974187,64.1314982 L75.1096879,23.236068 Z" id="Rectangle-5" fill="#FFFFFF"></path>
-                  <circle id="Oval" fill="#FFFFFF" cx="73" cy="6" r="6"></circle>
-                  <circle id="Oval" fill="#FFFFFF" cx="170" cy="7" r="6"></circle>
+      <div class="top-container">
+        <span class="daily-goal">DAILY GOAL: 5/10</span>
+        <svg class="settings-cog" width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Idea1" transform="translate(-354.000000, -15.000000)" fill="#FFFFFF">
+              <g id="settings" transform="translate(354.000000, 15.000000)">
+                <path d="M5.83666667,19.8333333 C6.035,21.1366667 6.34666667,22.2983333 6.8,23.29 L2.295,27.795 L6.205,31.705 L10.71,27.2 C11.7016667,27.6533333 12.8633333,27.965 14.1666667,28.135 L14.1666667,28.3333333 L14.1666667,34 L19.8333333,34 L19.8333333,28.3333333 L19.8333333,28.135 C21.1366667,27.965 22.2983333,27.6533333 23.29,27.2 L27.795,31.705 L31.705,27.795 L27.1716667,23.29 C27.6533333,22.2983333 27.965,21.1366667 28.135,19.8333333 L31.1666667,19.8333333 L34,19.8333333 L34,14.1666667 L31.1666667,14.1666667 L28.135,14.1666667 C27.965,12.8633333 27.6533333,11.7016667 27.1716667,10.71 L31.705,6.205 L27.795,2.295 L23.29,6.8 C22.2983333,6.34666667 21.1366667,6.035 19.8333333,5.83666667 L19.8333333,5.66666667 L19.8333333,0 L14.1666667,0 L14.1666667,5.66666667 L14.1666667,5.83666667 C12.8633333,6.035 11.7016667,6.34666667 10.71,6.8 L6.205,2.295 L2.295,6.205 L6.8,10.71 C6.34666667,11.7016667 6.035,12.8633333 5.83666667,14.1666667 L0,14.1666667 L0,19.8333333 L5.83666667,19.8333333 L5.83666667,19.8333333 Z M11.3333333,19.125 L11.3333333,14.875 L14.875,11.3333333 L19.125,11.3333333 L22.6666667,14.875 L22.6666667,19.125 L19.125,22.6666667 L14.875,22.6666667 L11.3333333,19.125 L11.3333333,19.125 Z" id="Shape"></path>
               </g>
+            </g>
           </g>
-      </g>
-    </svg>
+        </svg>
+      </div>
 
-        <!-- Timer Div and Counter -->
+      <svg class="tomato-1" width="239px" height="275px" viewBox="0 0 239 275" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+          <polygon id="path-1" points="20.9941406 24.1015625 14.140625 9.24804688 36.8613281 16.6748047 52.2597656 0.1484375 64.125 16.6748047 77.2890625 9.24804688 73.7382812 24.1015625"></polygon>
+          <linearGradient x1="50%" y1="0%" x2="50%" y2="98.2800542%" id="linearGradient-2">
+            <stop stop-color="#EB6464" offset="0%"></stop>
+            <stop stop-color="#AD0A38" offset="100%"></stop>
+          </linearGradient>
+        </defs>
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Idea1" transform="translate(-90.000000, -64.000000)">
+            <g id="Group" transform="translate(90.000000, 64.000000)">
+              <g id="Tomato-/-Cartoon-/-Girl" transform="translate(14.000000, 49.000000)">
+                <g id="crown" stroke-width="1" fill-rule="evenodd" transform="translate(56.000000, 9.000000)" stroke="#4A4A4A">
+                  <g id="Path-3">
+                    <use stroke-width="1" fill="#23A613" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use stroke-width="3" xlink:href="#path-1"></use>
+                  </g>
+                  <polygon id="Triangle" stroke-width="3" fill="#23A613" transform="translate(79.268950, 24.445862) rotate(34.000000) translate(-79.268950, -24.445862) " points="79.2689502 8.44586247 86.2689502 40.4458625 72.2689502 40.4458625"></polygon>
+                  <polygon id="Triangle" stroke-width="3" fill="#23A613" transform="translate(14.750349, 24.178951) scale(-1, 1) rotate(34.000000) translate(-14.750349, -24.178951) " points="14.7503495 8.17895149 21.7503495 40.1789515 7.75034946 40.1789515"></polygon>
+                </g>
+                <ellipse id="Oval" stroke="#4A4A4A" stroke-width="4" fill="url(#linearGradient-2)" fill-rule="evenodd" cx="103.230469" cy="114.144605" rx="103.230469" ry="82.1446052"></ellipse>
+                <g id="Eyelash-Right" stroke-width="1" fill-rule="evenodd" transform="translate(127.000000, 75.000000)" stroke="#4A4A4A">
+                  <path d="M1,10.335017 C7.62788658,12.2235804 10.5950331,9.44524139 9.90143961,2" id="Path-5" stroke-width="2" transform="translate(5.500000, 6.454102) rotate(10.000000) translate(-5.500000, -6.454102) "></path>
+                  <path d="M6.70508151,10.048766 C13.3329681,11.9373294 16.3001146,9.15899038 15.6065211,1.71374899" id="Path-5" stroke-width="2" transform="translate(11.205082, 6.167851) rotate(32.000000) translate(-11.205082, -6.167851) "></path>
+                  <path d="M8.1632349,16.7240559 C16.025772,19.9040969 19.5456422,15.225815 18.7228452,2.68921036" id="Path-5" stroke-width="2" transform="translate(13.501500, 10.189210) rotate(48.000000) translate(-13.501500, -10.189210) "></path>
+                </g>
+                <g id="Eyelash-Left" stroke-width="1" fill-rule="evenodd" transform="translate(60.500000, 84.000000) scale(-1, 1) translate(-60.500000, -84.000000) translate(49.000000, 74.000000)" stroke="#4A4A4A">
+                  <path d="M1,10.335017 C7.62788658,12.2235804 10.5950331,9.44524139 9.90143961,2" id="Path-5" stroke-width="2" transform="translate(5.500000, 6.454102) rotate(10.000000) translate(-5.500000, -6.454102) "></path>
+                  <path d="M6.70508151,10.048766 C13.3329681,11.9373294 16.3001146,9.15899038 15.6065211,1.71374899" id="Path-5" stroke-width="2" transform="translate(11.205082, 6.167851) rotate(32.000000) translate(-11.205082, -6.167851) "></path>
+                  <path d="M8.1632349,16.7240559 C16.025772,19.9040969 19.5456422,15.225815 18.7228452,2.68921036" id="Path-5" stroke-width="2" transform="translate(13.501500, 10.189210) rotate(48.000000) translate(-13.501500, -10.189210) "></path>
+                </g>
+                <g id="Eyes" stroke-width="1" fill-rule="evenodd" transform="translate(52.000000, 79.000000)">
+                  <circle id="Oval-2" fill="#FFFFFF" cx="13.8847656" cy="13.8847656" r="13.8847656"></circle>
+                  <circle id="Oval-2" fill="#4A4A4A" cx="14.6337891" cy="17.6337891" r="5.63378906"></circle>
+                  <circle id="Oval-2" fill="#FFFFFF" cx="81.8066406" cy="14.8066406" r="12.8066406"></circle>
+                  <path d="M81.6337891,23.2675781 C84.7452448,23.2675781 87.2675781,20.7452448 87.2675781,17.6337891 C87.2675781,14.5223333 84.7452448,12 81.6337891,12 C78.5223333,12 76,14.5223333 76,17.6337891 C76,20.7452448 78.5223333,23.2675781 81.6337891,23.2675781 Z" id="Oval-2" fill="#4A4A4A"></path>
+                </g>
+                <ellipse id="Oval-3" fill-opacity="0.780000031" fill="#DDC3C3" fill-rule="nonzero" cx="102.946289" cy="219.27832" rx="40.5400391" ry="6.02079788"></ellipse>
+                <g id="blush" stroke-width="1" fill-rule="evenodd" transform="translate(47.000000, 111.000000)" fill="#FF8686">
+                  <ellipse id="Oval-4" transform="translate(12.000000, 2.500000) scale(1, -1) translate(-12.000000, -2.500000) " cx="12" cy="2.5" rx="12" ry="2.5"></ellipse>
+                  <ellipse id="Oval-4" transform="translate(92.000000, 3.500000) scale(1, -1) translate(-92.000000, -3.500000) " cx="92" cy="3.5" rx="12" ry="2.5"></ellipse>
+                </g>
+                <path d="" id="Path-2" stroke="#979797" stroke-width="1"></path>
+                <path d="M87,133 L101.357422,133 L119.123047,133 C112.951497,143.714844 107.597656,149.072266 103.061523,149.072266 C98.5253906,149.072266 93.1715495,143.714844 87,133 Z" id="Path-4" stroke="#4A4A4A" stroke-width="3" fill="#FFFFFF" fill-rule="evenodd"></path>
+              </g>
+              <path d="M162.966853,24.5177659 L166.830557,25.5530421 L155.701338,67.0878526 L151.837634,66.0525764 L162.966853,24.5177659 Z M236.158427,73.1476209 L238.83495,76.1202002 L206.879722,104.892816 L204.2032,101.920237 L236.158427,73.1476209 Z M0.755623312,69.3901906 L3.32677375,66.3260128 L36.2666848,93.96588 L33.6955344,97.0300578 L0.755623312,69.3901906 Z M75.1096879,23.236068 L78.913914,22 L92.2016447,62.8954302 L88.3974187,64.1314982 L75.1096879,23.236068 Z" id="Rectangle-5" fill="#FFFFFF"></path>
+              <circle id="Oval" fill="#FFFFFF" cx="73" cy="6" r="6"></circle>
+              <circle id="Oval" fill="#FFFFFF" cx="170" cy="7" r="6"></circle>
+            </g>
+          </g>
+        </g>
+      </svg>
 
-        <div class="timer-container">
-          <span class="timer">TIMER</span>
-          <span class="countdown">24:59</span>
+      <!-- Timer Div and Counter -->
+
+      <div class="timer-container">
+        <span class="timer">TIMER</span>
+        <span class="countdown">24:59</span>
+      </div>
+
+      <!-- Green Container Contents-->
+
+      <div class="green-container">
+        <div class="text-flex">
+          <span class="green-container-text pomodoro-text-margin">POMODORO</span>
+          <span class="green-container-text break-text-margin">BREAK</span>
         </div>
 
-        <!-- Green Container Contents-->
+        <div class="timer-arrow-flex">  <!-- Wrapping around most as flex -->
+          <div class="pomodoro-box-flex">
+            <div class="pomodoro-box">0</div>
+            <div class="pomodoro-box">0</div>
+          </div>
 
-        <div class="green-container">
-          <div class="text-flex">
-            <span class="green-container-text pomodoro-text-margin">POMODORO</span>
-            <span class="green-container-text break-text-margin">BREAK</span>
+          <div class="arrow-flex">
+            <svg class="arrow arrow1" width="16px" height="24px" viewBox="0 0 16 24">
+              <defs></defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Idea1" transform="translate(-170.000000, -656.000000)">
+                  <g id="timer-choices" transform="translate(53.000000, 624.000000)">
+                    <g id="arrow-up-left" transform="translate(117.000000, 32.000000)">
+                      <rect id="Rectangle-4" fill="#FFFFFF" x="5" y="7" width="5.01171875" height="16.7042079"></rect>
+                      <polygon id="Triangle" fill="#FAF6F6" points="7.59082031 0 15.1816406 7.78217822 0 7.78217822"></polygon>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+
+            <svg class="arrow arrow1" width="16px" height="24px" viewBox="0 0 16 24">
+              <defs></defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Idea1" transform="translate(-170.000000, -690.000000)">
+                  <g id="timer-choices" transform="translate(53.000000, 624.000000)">
+                    <g id="arrow-down-left" transform="translate(117.000000, 66.000000)">
+                      <rect id="Rectangle-4" fill="#FFFFFF" x="5" y="0" width="5.01171875" height="16.4848855"></rect>
+                      <polygon id="Triangle" fill="#FAF6F6" points="7.59082031 23.68 0 16 15.1816406 16"></polygon>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+
+          <div class="pomodoro-box-flex">
+            <div class="pomodoro-box">0</div>
+            <div class="pomodoro-box">0</div>
+          </div>
+
+          <div class="arrow-flex">
+            <svg class="arrow arrow1" width="16px" height="24px" viewBox="0 0 16 24">
+              <defs></defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Idea1" transform="translate(-170.000000, -656.000000)">
+                  <g id="timer-choices" transform="translate(53.000000, 624.000000)">
+                    <g id="arrow-up-left" transform="translate(117.000000, 32.000000)">
+                      <rect id="Rectangle-4" fill="#FFFFFF" x="5" y="7" width="5.01171875" height="16.7042079"></rect>
+                      <polygon id="Triangle" fill="#FAF6F6" points="7.59082031 0 15.1816406 7.78217822 0 7.78217822"></polygon>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+
+            <svg class="arrow arrow1" width="16px" height="24px" viewBox="0 0 16 24">
+              <defs></defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Idea1" transform="translate(-170.000000, -690.000000)">
+                  <g id="timer-choices" transform="translate(53.000000, 624.000000)">
+                    <g id="arrow-down-left" transform="translate(117.000000, 66.000000)">
+                      <rect id="Rectangle-4" fill="#FFFFFF" x="5" y="0" width="5.01171875" height="16.4848855"></rect>
+                      <polygon id="Triangle" fill="#FAF6F6" points="7.59082031 23.68 0 16 15.1816406 16"></polygon>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+
+        </div> <!-- timmer-arrow-flex-end-->
+      </div> <!-- Green Container Div End-->
+    </div> <!-- App End -->
+  </div> <!-- App-display End -->
+
+  <div class="settings-display"> <!-- Settings-display Start -->
+    <div class="app-settings"> <!-- App Settings Start -->
+
+      <div class="settings-container"> <!-- settings-container Start -->
+        <span class="back-text">BACK</span>
+
+        <h1 class="settings-header">SETTINGS</h1>
+
+      </div> <!-- settings-container End -->
+
+      <div class="options-container"> <!-- options-container open -->
+
+        <div class="row-flex"> <!-- row-flex open -->
+          <span class="name options-text">NAME</span>
+          <hr />
+
+          <svg class="name-cancel-button" width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="settings-2" transform="translate(-357.000000, -167.000000)">
+                <g id="CANCEL-BUTTON" transform="translate(359.000000, 168.000000)">
+                  <g id="EXIT-BUTTON" transform="translate(0.000000, 0.683212)" stroke-width="3" stroke="#4A4A4A">
+                    <circle id="Oval" cx="11.0841751" cy="11.0841751" r="11.0841751"></circle>
+                  </g>
+                  <polygon id="Rectangle-5" fill="#4A4A4A" points="15.4296875 6.15234375 16.6992188 7.42750589 6.54296875 17.628803 5.2734375 16.3536409"></polygon>
+                  <polygon id="Rectangle-5" fill="#4A4A4A" points="6.54296875 6.15234375 5.2734375 7.42750589 15.4296875 17.628803 16.6992188 16.3536409"></polygon>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div> <!-- row flex close -->
+
+        <div class="daily-goal-flex">
+          <span class="daily-goal-settings options-text">DAILY GOAL</span>
+          <div class="settings-box">0</div>
+          <div class="settings-box">0</div>
+
+          <div class="arrow-flex">
+            <svg class="arrow arrow1" width="16px" height="24px" viewBox="0 0 16 24">
+              <defs></defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Idea1" transform="translate(-170.000000, -656.000000)">
+                  <g id="timer-choices" transform="translate(53.000000, 624.000000)">
+                    <g id="arrow-up-left" transform="translate(117.000000, 32.000000)">
+                      <rect id="Rectangle-4" fill="#bd3c60" x="5" y="7" width="5.01171875" height="16.7042079"></rect>
+                      <polygon id="Triangle" fill="#bd3c60" points="7.59082031 0 15.1816406 7.78217822 0 7.78217822"></polygon>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+
+            <svg class="arrow arrow1" width="16px" height="24px" viewBox="0 0 16 24">
+              <defs></defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Idea1" transform="translate(-170.000000, -690.000000)">
+                  <g id="timer-choices" transform="translate(53.000000, 624.000000)">
+                    <g id="arrow-down-left" transform="translate(117.000000, 66.000000)">
+                      <rect id="Rectangle-4" fill="#bd3c60" x="5" y="0" width="5.01171875" height="16.4848855"></rect>
+                      <polygon id="Triangle" fill="#bd3c60" points="7.59082031 23.68 0 16 15.1816406 16"></polygon>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <div class="left-alignment"> <!-- left alignment open -->
+
+          <div class="red-text-flex">
+            <span class="red-text red-pomodoro-text-margin">POMODORO</span>
+            <span class="red-text red-break-text-margin">BREAK</span>
           </div>
 
           <div class="timer-arrow-flex">  <!-- Wrapping around most as flex -->
-            <div class="pomodoro-box-flex">
-              <div class="pomodoro-box">0</div>
-              <div class="pomodoro-box">0</div>
+            <div class="red-pomodoro-box-flex">
+              <div class="pomodoro-box-red">0</div>
+              <div class="pomodoro-box-red">0</div>
             </div>
 
             <div class="arrow-flex">
               <svg class="arrow arrow1" width="16px" height="24px" viewBox="0 0 16 24">
-                <defs></defs>
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <g id="Idea1" transform="translate(-170.000000, -656.000000)">
-                    <g id="timer-choices" transform="translate(53.000000, 624.000000)">
-                      <g id="arrow-up-left" transform="translate(117.000000, 32.000000)">
-                        <rect id="Rectangle-4" fill="#FFFFFF" x="5" y="7" width="5.01171875" height="16.7042079"></rect>
-                        <polygon id="Triangle" fill="#FAF6F6" points="7.59082031 0 15.1816406 7.78217822 0 7.78217822"></polygon>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-
-              <svg class="arrow arrow1" width="16px" height="24px" viewBox="0 0 16 24">
-                <defs></defs>
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <g id="Idea1" transform="translate(-170.000000, -690.000000)">
-                    <g id="timer-choices" transform="translate(53.000000, 624.000000)">
-                      <g id="arrow-down-left" transform="translate(117.000000, 66.000000)">
-                        <rect id="Rectangle-4" fill="#FFFFFF" x="5" y="0" width="5.01171875" height="16.4848855"></rect>
-                        <polygon id="Triangle" fill="#FAF6F6" points="7.59082031 23.68 0 16 15.1816406 16"></polygon>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-            </div>
-
-            <div class="pomodoro-box-flex">
-              <div class="pomodoro-box">0</div>
-              <div class="pomodoro-box">0</div>
-            </div>
-
-            <div class="arrow-flex">
-              <svg class="arrow arrow1" width="16px" height="24px" viewBox="0 0 16 24">
-                <defs></defs>
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <g id="Idea1" transform="translate(-170.000000, -656.000000)">
-                    <g id="timer-choices" transform="translate(53.000000, 624.000000)">
-                      <g id="arrow-up-left" transform="translate(117.000000, 32.000000)">
-                        <rect id="Rectangle-4" fill="#FFFFFF" x="5" y="7" width="5.01171875" height="16.7042079"></rect>
-                        <polygon id="Triangle" fill="#FAF6F6" points="7.59082031 0 15.1816406 7.78217822 0 7.78217822"></polygon>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-
-              <svg class="arrow arrow1" width="16px" height="24px" viewBox="0 0 16 24">
-                <defs></defs>
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <g id="Idea1" transform="translate(-170.000000, -690.000000)">
-                    <g id="timer-choices" transform="translate(53.000000, 624.000000)">
-                      <g id="arrow-down-left" transform="translate(117.000000, 66.000000)">
-                        <rect id="Rectangle-4" fill="#FFFFFF" x="5" y="0" width="5.01171875" height="16.4848855"></rect>
-                        <polygon id="Triangle" fill="#FAF6F6" points="7.59082031 23.68 0 16 15.1816406 16"></polygon>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-            </div>
-
-          </div> <!-- timmer-arrow-flex-end-->
-        </div> <!-- Green Container Div End-->
-      </div> <!-- App End -->
-
-
-      <div class="app-settings"> <!-- App Settings Start -->
-
-        <div class="settings-container"> <!-- settings-container Start -->
-          <span class="back-text">BACK</span>
-
-          <h1 class="settings-header">SETTINGS</h1>
-
-        </div> <!-- settings-container End -->
-
-        <div class="options-container"> <!-- options-container open -->
-
-          <div class="row-flex"> <!-- row-flex open -->
-            <span class="name options-text">NAME</span>
-            <hr />
-
-            <svg class="name-cancel-button" width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="settings-2" transform="translate(-357.000000, -167.000000)">
-                  <g id="CANCEL-BUTTON" transform="translate(359.000000, 168.000000)">
-                    <g id="EXIT-BUTTON" transform="translate(0.000000, 0.683212)" stroke-width="3" stroke="#4A4A4A">
-                      <circle id="Oval" cx="11.0841751" cy="11.0841751" r="11.0841751"></circle>
-                    </g>
-                    <polygon id="Rectangle-5" fill="#4A4A4A" points="15.4296875 6.15234375 16.6992188 7.42750589 6.54296875 17.628803 5.2734375 16.3536409"></polygon>
-                    <polygon id="Rectangle-5" fill="#4A4A4A" points="6.54296875 6.15234375 5.2734375 7.42750589 15.4296875 17.628803 16.6992188 16.3536409"></polygon>
-                  </g>
-                </g>
-              </g>
-            </svg>
-          </div> <!-- row flex close -->
-
-          <div class="daily-goal-flex">
-            <span class="daily-goal-settings options-text">DAILY GOAL</span>
-            <div class="settings-box">0</div>
-            <div class="settings-box">0</div>
-
-            <div class="arrow-flex">
-              <svg class="arrow arrow1" width="16px" height="24px" viewBox="0 0 16 24">
-                <defs></defs>
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <g id="Idea1" transform="translate(-170.000000, -656.000000)">
                     <g id="timer-choices" transform="translate(53.000000, 624.000000)">
@@ -217,7 +262,6 @@
               </svg>
 
               <svg class="arrow arrow1" width="16px" height="24px" viewBox="0 0 16 24">
-                <defs></defs>
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <g id="Idea1" transform="translate(-170.000000, -690.000000)">
                     <g id="timer-choices" transform="translate(53.000000, 624.000000)">
@@ -230,352 +274,311 @@
                 </g>
               </svg>
             </div>
-          </div>
 
-          <div class="left-alignment"> <!-- left alignment open -->
-
-            <div class="red-text-flex">
-              <span class="red-text red-pomodoro-text-margin">POMODORO</span>
-              <span class="red-text red-break-text-margin">BREAK</span>
+            <div class="red-pomodoro-box-flex">
+              <div class="pomodoro-box-red">0</div>
+              <div class="pomodoro-box-red">0</div>
             </div>
 
-            <div class="timer-arrow-flex">  <!-- Wrapping around most as flex -->
-              <div class="red-pomodoro-box-flex">
-                <div class="pomodoro-box-red">0</div>
-                <div class="pomodoro-box-red">0</div>
-              </div>
-
-              <div class="arrow-flex">
-                <svg class="arrow arrow1" width="16px" height="24px" viewBox="0 0 16 24">
-                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Idea1" transform="translate(-170.000000, -656.000000)">
-                      <g id="timer-choices" transform="translate(53.000000, 624.000000)">
-                        <g id="arrow-up-left" transform="translate(117.000000, 32.000000)">
-                          <rect id="Rectangle-4" fill="#bd3c60" x="5" y="7" width="5.01171875" height="16.7042079"></rect>
-                          <polygon id="Triangle" fill="#bd3c60" points="7.59082031 0 15.1816406 7.78217822 0 7.78217822"></polygon>
-                        </g>
+            <div class="arrow-flex">
+              <svg class="arrow arrow1" width="16px" height="24px" viewBox="0 0 16 24">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Idea1" transform="translate(-170.000000, -656.000000)">
+                    <g id="timer-choices" transform="translate(53.000000, 624.000000)">
+                      <g id="arrow-up-left" transform="translate(117.000000, 32.000000)">
+                        <rect id="Rectangle-4" fill="#bd3c60" x="5" y="7" width="5.01171875" height="16.7042079"></rect>
+                        <polygon id="Triangle" fill="#bd3c60" points="7.59082031 0 15.1816406 7.78217822 0 7.78217822"></polygon>
                       </g>
                     </g>
                   </g>
-                </svg>
-
-                <svg class="arrow arrow1" width="16px" height="24px" viewBox="0 0 16 24">
-                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Idea1" transform="translate(-170.000000, -690.000000)">
-                      <g id="timer-choices" transform="translate(53.000000, 624.000000)">
-                        <g id="arrow-down-left" transform="translate(117.000000, 66.000000)">
-                          <rect id="Rectangle-4" fill="#bd3c60" x="5" y="0" width="5.01171875" height="16.4848855"></rect>
-                          <polygon id="Triangle" fill="#bd3c60" points="7.59082031 23.68 0 16 15.1816406 16"></polygon>
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
-              </div>
-
-              <div class="red-pomodoro-box-flex">
-                <div class="pomodoro-box-red">0</div>
-                <div class="pomodoro-box-red">0</div>
-              </div>
-
-              <div class="arrow-flex">
-                <svg class="arrow arrow1" width="16px" height="24px" viewBox="0 0 16 24">
-                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Idea1" transform="translate(-170.000000, -656.000000)">
-                      <g id="timer-choices" transform="translate(53.000000, 624.000000)">
-                        <g id="arrow-up-left" transform="translate(117.000000, 32.000000)">
-                          <rect id="Rectangle-4" fill="#bd3c60" x="5" y="7" width="5.01171875" height="16.7042079"></rect>
-                          <polygon id="Triangle" fill="#bd3c60" points="7.59082031 0 15.1816406 7.78217822 0 7.78217822"></polygon>
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
-
-                <svg class="arrow arrow1" width="16px" height="24px" viewBox="0 0 16 24">
-                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Idea1" transform="translate(-170.000000, -690.000000)">
-                      <g id="timer-choices" transform="translate(53.000000, 624.000000)">
-                        <g id="arrow-down-left" transform="translate(117.000000, 66.000000)">
-                          <rect id="Rectangle-4" fill="#bd3c60" x="5" y="0" width="5.01171875" height="16.4848855"></rect>
-                          <polygon id="Triangle" fill="#bd3c60" points="7.59082031 23.68 0 16 15.1816406 16"></polygon>
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
-              </div>
-            </div> <!-- timer-arrow-flex-end-->
-          </div> <!-- left alignment close -->
-        </div> <!-- options-container End -->
-
-        <div class="tomato-family-container"> <!-- tomato-family-container-open -->
-          <svg class="tomato-family" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          width="379.354px" height="221.424px" viewBox="0 0 379.354 221.424" enable-background="new 0 0 379.354 221.424"
-          xml:space="preserve">
-          <g id="Symbols">
-            <g id="tomato-family" transform="translate(0.000000, -19.000000)">
-              <g id="Group-2" transform="translate(0.000000, 19.000000)">
-                <g id="Group" transform="translate(0.000000, 91.000000)">
-                  <g id="Tomato-_x2F_-Cartoon-_x2F_-Girl" transform="translate(6.315151, 23.165079)">
-                    <g id="crown" transform="translate(24.077295, 4.244541)">
-                      <g id="Path-3">
-                        <g>
-                          <polygon id="path-1" fill="#23A613" stroke="#4A4A4A" points="9.026,11.367 6.08,4.362 15.849,7.864 22.469,0.07
-                          27.57,7.864 33.231,4.362 31.704,11.367 								"/>
-                        </g>
-                        <g>
-                          <polygon id="path-1_1_" fill="none" stroke="#4A4A4A" stroke-width="3" points="9.026,11.367 6.08,4.362 15.849,7.864
-                          22.469,0.07 27.57,7.864 33.231,4.362 31.704,11.367 								"/>
-                        </g>
-                      </g>
-                      <polygon id="Triangle" fill="#23A613" stroke="#4A4A4A" stroke-width="3" points="38.301,5.274 32.358,19.467 27.367,16.102
-                      "/>
-                      <polygon id="Triangle_1_" fill="#23A613" stroke="#4A4A4A" stroke-width="3" points="2.122,5.147 8.067,19.342 13.057,15.976
-                      "/>
-                    </g>
-
-                    <linearGradient id="Oval_13_" gradientUnits="userSpaceOnUse" x1="-164.1096" y1="343.3408" x2="-164.1096" y2="342.358" gradientTransform="matrix(88.7682 0 0 -77.4814 14612.1143 26617.5723)">
-                      <stop  offset="0" style="stop-color:#EB6464"/>
-                      <stop  offset="1" style="stop-color:#AD0A38"/>
-                    </linearGradient>
-
-                    <ellipse id="Oval" fill="url(#Oval_13_)" stroke="#4A4A4A" stroke-width="4" cx="44.384" cy="53.832" rx="44.384" ry="38.741"/>
-                    <g id="Eyelash-Right" transform="translate(54.603865, 35.371179)">
-                      <path id="Path-5" fill="none" stroke="#4A4A4A" stroke-width="2" d="M0.142,4.511c2.652,1.371,4.136,0.303,4.452-3.207"/>
-                      <path id="Path-5_1_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M2.207,3.436c1.945,2.265,3.721,1.83,5.329-1.307"/>
-                      <path id="Path-5_2_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M1.979,5.162c1.147,3.516,3.8,3.164,7.957-1.056"/>
-                    </g>
-
-                    <g id="Eyelash-Left" transform="translate(26.012077, 39.615721) scale(-1, 1) translate(-26.012077, -39.615721) translate(21.067633, 34.899563)">
-                      <path id="Path-5_3_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M0.141,4.511c2.652,1.372,4.136,0.303,4.452-3.207"/>
-                      <path id="Path-5_4_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M2.207,3.435c1.945,2.266,3.721,1.83,5.329-1.305"/>
-                      <path id="Path-5_5_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M1.979,5.162c1.147,3.516,3.8,3.164,7.957-1.055"/>
-                    </g>
-                    <g id="Eyes" transform="translate(22.357488, 37.257642)">
-                      <ellipse id="Oval-2" fill="#FFFFFF" cx="5.97" cy="6.548" rx="5.97" ry="6.548"/>
-                      <ellipse id="Oval-2_1_" fill="#4A4A4A" cx="6.292" cy="8.317" rx="2.422" ry="2.657"/>
-                      <ellipse id="Oval-2_2_" fill="#FFFFFF" cx="35.173" cy="6.983" rx="5.506" ry="6.04"/>
-                      <path id="Oval-2_3_" fill="#4A4A4A" d="M35.098,10.974c1.338,0,2.422-1.189,2.422-2.657s-1.084-2.657-2.422-2.657
-                      c-1.337,0-2.422,1.189-2.422,2.657S33.761,10.974,35.098,10.974z"/>
-                    </g>
-                    <ellipse id="Oval-3" fill="#DDC3C3" fill-opacity="0.78" cx="44.262" cy="103.415" rx="17.43" ry="2.84"/>
-                    <g id="blush" transform="translate(20.207729, 52.349345)">
-                      <ellipse id="Oval-4" fill="#FF8686" cx="5.159" cy="1.179" rx="5.16" ry="1.179"/>
-                      <ellipse id="Oval-4_1_" fill="#FF8686" cx="39.556" cy="1.651" rx="5.159" ry="1.179"/>
-                    </g>
-                    <path id="Path-4" fill="#FFFFFF" stroke="#4A4A4A" stroke-width="3" d="M37.406,62.726h6.173h7.638
-                    c-2.653,5.053-4.955,7.579-6.906,7.579C42.361,70.305,40.059,67.778,37.406,62.726z"/>
-                  </g>
-                  <path id="Rectangle-5" fill="#FFFFFF" d="M70.448,11.614l1.654,0.443l-5.261,19.636l-1.654-0.443L70.448,11.614z M102.25,34.647
-                  l1.146,1.272L88.289,49.522l-1.146-1.272L102.25,34.647z M0.015,32.736l1.101-1.312l15.573,13.067l-1.101,1.312L0.015,32.736z
-                  M32.288,10.958l1.629-0.529l6.282,19.333l-1.629,0.529L32.288,10.958z"/>
-                  <ellipse id="Oval_1_" fill="#FFFFFF" cx="31.576" cy="2.836" rx="2.569" ry="2.836"/>
-                  <ellipse id="Oval_2_" fill="#FFFFFF" cx="73.107" cy="3.309" rx="2.569" ry="2.837"/>
                 </g>
-                <g id="MAMATOMATO" transform="translate(91.000000, 0.000000)">
-                  <g id="Tomato-_x2F_-Cartoon-_x2F_-Girl_1_" transform="translate(11.587121, 23.503588)">
-                    <g id="crown_1_" transform="translate(43.992334, 7.806781)">
-                      <g id="Path-3_1_">
-                        <g>
-                          <polygon id="path-3" fill="#23A613" stroke="#4A4A4A" points="16.492,20.906 11.109,8.022 28.958,14.464 41.054,0.129
-                          50.376,14.464 60.716,8.022 57.927,20.906 								"/>
-                        </g>
-                        <g>
-                          <polygon id="path-3_1_" fill="none" stroke="#4A4A4A" stroke-width="3" points="16.492,20.906 11.109,8.022 28.958,14.464
-                          41.054,0.129 50.376,14.464 60.716,8.022 57.927,20.906 								"/>
-                        </g>
+              </svg>
+
+              <svg class="arrow arrow1" width="16px" height="24px" viewBox="0 0 16 24">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Idea1" transform="translate(-170.000000, -690.000000)">
+                    <g id="timer-choices" transform="translate(53.000000, 624.000000)">
+                      <g id="arrow-down-left" transform="translate(117.000000, 66.000000)">
+                        <rect id="Rectangle-4" fill="#bd3c60" x="5" y="0" width="5.01171875" height="16.4848855"></rect>
+                        <polygon id="Triangle" fill="#bd3c60" points="7.59082031 23.68 0 16 15.1816406 16"></polygon>
                       </g>
-                      <polygon id="Triangle_2_" fill="#23A613" stroke="#4A4A4A" stroke-width="3" points="70.033,9.699 59.07,35.786
-                      49.952,29.636 						"/>
-                      <polygon id="Triangle_3_" fill="#23A613" stroke="#4A4A4A" stroke-width="3" points="3.827,9.467 14.79,35.554 23.907,29.404
-                      "/>
                     </g>
-
-                    <linearGradient id="Oval_14_" gradientUnits="userSpaceOnUse" x1="-260.9275" y1="435.8255" x2="-260.9275" y2="434.8427" gradientTransform="matrix(162.191 0 0 -142.5078 42401.2227 62136.1328)">
-                      <stop  offset="0" style="stop-color:#EB6464"/>
-                      <stop  offset="1" style="stop-color:#AD0A38"/>
-                    </linearGradient>
-
-                    <ellipse id="Oval_3_" fill="url(#Oval_14_)" stroke="#4A4A4A" stroke-width="4" cx="81.095" cy="99.011" rx="81.096" ry="71.254"/>
-
-                    <g id="Eyelash-Left_1_" transform="translate(47.527432, 72.863294) scale(-1, 1) translate(-47.527432, -72.863294) translate(38.493292, 64.189092)">
-                      <path id="Path-5_6_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M0.255,8.3c4.843,2.517,7.557,0.549,8.142-5.906"/>
-                      <path id="Path-5_7_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M4.021,6.332c3.547,4.148,6.801,3.34,9.761-2.426"/>
-                      <path id="Path-5_8_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M3.588,9.515c2.083,6.436,6.949,5.775,14.598-1.981"/>
-                    </g>
-                    <g id="Eyes_1_" transform="translate(40.850025, 68.526193)">
-                      <ellipse id="Oval-2_4_" fill="#FFFFFF" cx="10.908" cy="12.044" rx="10.908" ry="12.044"/>
-                      <ellipse id="Oval-2_5_" fill="#4A4A4A" cx="11.496" cy="15.296" rx="4.426" ry="4.887"/>
-                    </g>
-                    <ellipse id="Oval-3_1_" fill="#DDC3C3" fill-opacity="0.78" cx="80.872" cy="190.206" rx="31.847" ry="5.223"/>
-                    <g id="blush_1_" transform="translate(36.922138, 96.283638)">
-                      <ellipse id="Oval-4_2_" fill="#FF8686" cx="9.427" cy="2.169" rx="9.427" ry="2.169"/>
-                      <ellipse id="Oval-4_3_" fill="#FF8686" cx="72.273" cy="3.036" rx="9.427" ry="2.169"/>
-                    </g>
-                    <path id="Path-2" fill="#FF8686" d="M0,0"/>
-                    <path id="Path-4_1_" fill="#FFFFFF" stroke="#4A4A4A" stroke-width="3" d="M68.345,115.367h11.279h13.957
-                    c-4.849,9.293-9.055,13.941-12.618,13.941S73.194,124.66,68.345,115.367z"/>
                   </g>
-                  <path id="Rectangle-5_1_" fill="#FFFFFF" d="M129.26,2.31l3.035,0.813l-9.654,36.028l-3.035-0.813L129.26,2.31z M187.609,44.571
-                  l2.103,2.335l-27.719,24.958l-2.103-2.335L187.609,44.571z M0.027,41.065l2.02-2.407l28.573,23.976l-2.02,2.407L0.027,41.065z
-                  M59.242,1.105l2.989-0.971l11.526,35.474l-2.989,0.971L59.242,1.105z"/>
                 </g>
-                <polygon id="Star" fill="#FFFFFF" points="237.246,116.791 234.004,118.602 234.623,114.766 232,112.049 235.625,111.49
-                237.246,108 238.867,111.49 242.491,112.049 239.869,114.766 240.488,118.602 			"/>
-                <g id="baby2" transform="translate(257.000000, 143.000000)">
-                  <g id="Tomato-_x2F_-Cartoon-_x2F_-Girl_2_" transform="translate(0.544470, 1.669913)">
-                    <g id="crown_2_" transform="translate(17.253799, 3.061821)">
-                      <g id="Path-3_2_">
-                        <g>
-                          <polygon id="path-4" fill="#23A613" stroke="#4A4A4A" points="6.468,8.2 4.357,3.146 11.357,5.673 16.102,0.05
-                          19.757,5.673 23.813,3.146 22.719,8.2 								"/>
-                        </g>
-                        <g>
-                          <polygon id="path-4_1_" fill="none" stroke="#4A4A4A" stroke-width="3" points="6.468,8.2 4.357,3.146 11.357,5.673
-                          16.102,0.05 19.757,5.673 23.813,3.146 22.719,8.2 								"/>
-                        </g>
+              </svg>
+            </div>
+          </div> <!-- timer-arrow-flex-end-->
+        </div> <!-- left alignment close -->
+      </div> <!-- options-container End -->
+
+      <div class="tomato-family-container"> <!-- tomato-family-container-open -->
+        <svg class="tomato-family" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        width="379.354px" height="221.424px" viewBox="0 0 379.354 221.424" enable-background="new 0 0 379.354 221.424"
+        xml:space="preserve">
+        <g id="Symbols">
+          <g id="tomato-family" transform="translate(0.000000, -19.000000)">
+            <g id="Group-2" transform="translate(0.000000, 19.000000)">
+              <g id="Group" transform="translate(0.000000, 91.000000)">
+                <g id="Tomato-_x2F_-Cartoon-_x2F_-Girl" transform="translate(6.315151, 23.165079)">
+                  <g id="crown" transform="translate(24.077295, 4.244541)">
+                    <g id="Path-3">
+                      <g>
+                        <polygon id="path-1" fill="#23A613" stroke="#4A4A4A" points="9.026,11.367 6.08,4.362 15.849,7.864 22.469,0.07
+                        27.57,7.864 33.231,4.362 31.704,11.367 								"/>
                       </g>
-                      <polygon id="Triangle_4_" fill="#23A613" stroke="#4A4A4A" stroke-width="3" points="27.467,3.803 23.168,14.036
-                      19.591,11.624 						"/>
-                      <polygon id="Triangle_5_" fill="#23A613" stroke="#4A4A4A" stroke-width="3" points="1.501,3.714 5.8,13.944 9.377,11.532
-                      "/>
-                    </g>
-
-                    <linearGradient id="Oval_15_" gradientUnits="userSpaceOnUse" x1="-414.8618" y1="311.293" x2="-414.8618" y2="310.3102" gradientTransform="matrix(63.6113 0 0 -55.8916 26421.7441 17409.5215)">
-                      <stop  offset="0" style="stop-color:#EB6464"/>
-                      <stop  offset="1" style="stop-color:#AD0A38"/>
-                    </linearGradient>
-
-                    <ellipse id="Oval_4_" fill="url(#Oval_15_)" stroke="#4A4A4A" stroke-width="4" cx="31.805" cy="38.832" rx="31.807" ry="27.945"/>
-                    <g id="Eyelash-Right_1_" transform="translate(39.129151, 25.515172)">
-                      <path id="Path-5_9_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M0.1,3.255C1.999,4.243,3.064,3.47,3.293,0.939"/>
-                      <path id="Path-5_10_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M1.577,2.483C2.968,4.11,4.244,3.793,5.406,1.532"/>
-                      <path id="Path-5_11_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M1.407,3.732c0.816,2.524,2.726,2.265,5.725-0.777"/>
-                    </g>
-
-                    <g id="Eyelash-Left_2_" transform="translate(18.640265, 28.576993) scale(-1, 1) translate(-18.640265, -28.576993) translate(15.097074, 25.174970)">
-                      <path id="Path-5_12_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M0.1,3.255c1.899,0.988,2.964,0.216,3.193-2.316"/>
-                      <path id="Path-5_13_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M1.578,2.483C2.968,4.11,4.245,3.794,5.406,1.532"/>
-                      <path id="Path-5_14_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M1.408,3.731c0.816,2.524,2.725,2.266,5.725-0.777"/>
-                    </g>
-                    <g id="Eyes_2_" transform="translate(16.021385, 26.875982)">
-                      <ellipse id="Oval-2_6_" fill="#FFFFFF" cx="4.278" cy="4.724" rx="4.277" ry="4.724"/>
-                      <ellipse id="Oval-2_7_" fill="#4A4A4A" cx="4.508" cy="5.999" rx="1.736" ry="1.916"/>
-                      <ellipse id="Oval-2_8_" fill="#FFFFFF" cx="25.205" cy="5.037" rx="3.946" ry="4.356"/>
-                      <path id="Oval-2_9_" fill="#4A4A4A" d="M25.152,7.915c0.958,0,1.735-0.857,1.735-1.916s-0.777-1.916-1.735-1.916
-                      c-0.959,0-1.735,0.857-1.735,1.916S24.193,7.915,25.152,7.915z"/>
-                    </g>
-                    <ellipse id="Oval-3_2_" fill="#DDC3C3" fill-opacity="0.78" cx="31.718" cy="74.599" rx="12.49" ry="2.048"/>
-                    <g id="blush_2_" transform="translate(14.480867, 37.762455)">
-                      <ellipse id="Oval-4_4_" fill="#FF8686" cx="3.697" cy="0.851" rx="3.697" ry="1"/>
-                      <ellipse id="Oval-4_5_" fill="#FF8686" cx="28.346" cy="1.191" rx="3.697" ry="1"/>
-                    </g>
-                  </g>
-                  <ellipse id="Oval_5_" fill="#FFFFFF" cx="25.849" cy="2.041" rx="1.849" ry="2.041"/>
-                  <ellipse id="Oval_6_" fill="#FFFFFF" cx="43.849" cy="2.041" rx="1.849" ry="2.041"/>
-                </g>
-                <g id="Baby1tomato" transform="translate(0.000000, 91.000000)">
-                  <g id="Tomato-_x2F_-Cartoon-_x2F_-Girl_3_" transform="translate(6.315151, 23.165079)">
-                    <g id="crown_3_" transform="translate(23.976468, 4.254810)">
-                      <g id="Path-3_3_">
-                        <g>
-                          <polygon id="path-5" fill="#23A613" stroke="#4A4A4A" points="8.989,11.395 6.054,4.372 15.782,7.883 22.375,0.07
-                          27.455,7.883 33.091,4.372 31.571,11.395 								"/>
-                        </g>
-                        <g>
-                          <polygon id="path-5_1_" fill="none" stroke="#4A4A4A" stroke-width="3" points="8.989,11.395 6.054,4.372 15.782,7.883
-                          22.375,0.07 27.455,7.883 33.091,4.372 31.571,11.395 								"/>
-                        </g>
+                      <g>
+                        <polygon id="path-1_1_" fill="none" stroke="#4A4A4A" stroke-width="3" points="9.026,11.367 6.08,4.362 15.849,7.864
+                        22.469,0.07 27.57,7.864 33.231,4.362 31.704,11.367 								"/>
                       </g>
-                      <polygon id="Triangle_6_" fill="#23A613" stroke="#4A4A4A" stroke-width="3" points="38.169,5.286 32.194,19.504
-                      27.225,16.152 						"/>
-                      <polygon id="Triangle_7_" fill="#23A613" stroke="#4A4A4A" stroke-width="3" points="2.086,5.16 8.06,19.377 13.03,16.025
-                      "/>
                     </g>
-
-                    <linearGradient id="Oval_16_" gradientUnits="userSpaceOnUse" x1="-164.1042" y1="343.3506" x2="-164.1042" y2="342.3678" gradientTransform="matrix(88.3965 0 0 -77.6688 14550.4736 26682.7441)">
-                      <stop  offset="0" style="stop-color:#EB6464"/>
-                      <stop  offset="1" style="stop-color:#AD0A38"/>
-                    </linearGradient>
-
-                    <ellipse id="Oval_7_" fill="url(#Oval_16_)" stroke="#4A4A4A" stroke-width="4" cx="44.198" cy="53.962" rx="44.198" ry="38.834"/>
-                    <ellipse id="Oval-3_3_" fill="#DDC3C3" fill-opacity="0.78" cx="44.076" cy="103.665" rx="17.357" ry="2.846"/>
-                    <g id="blush_3_" transform="translate(20.123107, 52.475996)">
-                      <ellipse id="Oval-4_6_" fill="#FF8686" cx="5.138" cy="1.182" rx="5.138" ry="1.182"/>
-                      <ellipse id="Oval-4_7_" fill="#FF8686" cx="39.39" cy="1.654" rx="5.138" ry="1.182"/>
-                    </g>
+                    <polygon id="Triangle" fill="#23A613" stroke="#4A4A4A" stroke-width="3" points="38.301,5.274 32.358,19.467 27.367,16.102
+                    "/>
+                    <polygon id="Triangle_1_" fill="#23A613" stroke="#4A4A4A" stroke-width="3" points="2.122,5.147 8.067,19.342 13.057,15.976
+                    "/>
                   </g>
-                  <path id="Rectangle-5_2_" fill="#FFFFFF" d="M70.448,11.614l1.654,0.443l-5.261,19.636l-1.654-0.443L70.448,11.614z
-                  M102.25,34.647l1.146,1.272L88.289,49.522l-1.146-1.272L102.25,34.647z M0.015,32.736l1.101-1.312l15.573,13.067l-1.101,1.312
-                  L0.015,32.736z M32.288,10.958l1.629-0.529l6.282,19.333l-1.629,0.529L32.288,10.958z"/>
-                  <ellipse id="Oval_8_" fill="#FFFFFF" cx="31.576" cy="2.836" rx="2.569" ry="2.836"/>
-                  <ellipse id="Oval_9_" fill="#FFFFFF" cx="73.107" cy="3.309" rx="2.569" ry="2.837"/>
-                </g>
-                <path id="Path-7" fill="none" stroke="#4A4A4A" stroke-width="4" d="M203.53,107.143c11.829-15.59,18.677-13.262,20.543,6.985"/>
-                <g id="BABY3tomato" transform="translate(324.000000, 152.000000)">
-                  <g id="Tomato-_x2F_-Cartoon-_x2F_-Girl_4_" transform="translate(3.380888, 12.401688)">
-                    <g id="crown_4_" transform="translate(12.836074, 2.277861)">
-                      <polygon id="Path-3_4_" fill="#23A613" stroke="#4A4A4A" points="4.812,6.1 3.241,2.34 8.449,4.221 11.978,0.037
-                      14.698,4.221 17.716,2.34 16.902,6.1 						"/>
-                      <polygon id="Triangle_8_" fill="#23A613" stroke="#4A4A4A" points="20.434,2.83 17.235,10.442 14.575,8.647 						"/>
-                      <polygon id="Triangle_9_" fill="#23A613" stroke="#4A4A4A" points="1.117,2.762 4.315,10.374 6.975,8.58 						"/>
-                    </g>
 
-                    <linearGradient id="Oval_17_" gradientUnits="userSpaceOnUse" x1="-484.1206" y1="289.655" x2="-484.1206" y2="288.6722" gradientTransform="matrix(47.3241 0 0 -41.5809 22934.1777 12052.2119)">
-                      <stop  offset="0" style="stop-color:#EB6464"/>
-                      <stop  offset="1" style="stop-color:#AD0A38"/>
-                    </linearGradient>
+                  <linearGradient id="Oval_13_" gradientUnits="userSpaceOnUse" x1="-164.1096" y1="343.3408" x2="-164.1096" y2="342.358" gradientTransform="matrix(88.7682 0 0 -77.4814 14612.1143 26617.5723)">
+                    <stop  offset="0" style="stop-color:#EB6464"/>
+                    <stop  offset="1" style="stop-color:#AD0A38"/>
+                  </linearGradient>
 
-                    <ellipse id="Oval_10_" fill="url(#Oval_17_)" stroke="#4A4A4A" stroke-width="3" cx="23.662" cy="28.89" rx="23.662" ry="20.791"/>
-                    <g id="Eyelash-Right_2_" transform="translate(29.110383, 18.982176)">
-                      <path id="Path-5_15_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M0.074,2.422c1.413,0.734,2.205,0.16,2.376-1.724"/>
-                      <path id="Path-5_16_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M1.173,1.848c1.035,1.21,1.984,0.974,2.849-0.708"/>
-                      <path id="Path-5_17_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M1.047,2.776c0.607,1.878,2.027,1.686,4.26-0.578"/>
-                    </g>
-
-                    <g id="Eyelash-Left_3_" transform="translate(13.867545, 21.260037) scale(-1, 1) translate(-13.867545, -21.260037) translate(11.231565, 18.729080)">
-                      <path id="Path-5_18_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M0.074,2.422c1.414,0.734,2.205,0.16,2.376-1.724"/>
-                      <path id="Path-5_19_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M1.173,1.848c1.035,1.21,1.984,0.975,2.848-0.708"/>
-                      <path id="Path-5_20_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M1.046,2.776c0.608,1.878,2.028,1.685,4.26-0.578"/>
-                    </g>
-                    <g id="Eyes_3_" transform="translate(11.919212, 19.994559)">
-                      <ellipse id="Oval-2_10_" fill="#FFFFFF" cx="3.182" cy="3.514" rx="3.183" ry="3.514"/>
-                      <ellipse id="Oval-2_11_" fill="#4A4A4A" cx="3.354" cy="4.463" rx="1.291" ry="1.426"/>
-                      <ellipse id="Oval-2_12_" fill="#FFFFFF" cx="18.752" cy="3.747" rx="2.936" ry="3.241"/>
-                      <path id="Oval-2_13_" fill="#4A4A4A" d="M18.712,5.889c0.713,0,1.291-0.639,1.291-1.426s-0.578-1.426-1.291-1.426
-                      s-1.291,0.639-1.291,1.426S17.999,5.889,18.712,5.889z"/>
-                    </g>
-                    <ellipse id="Oval-3_4_" fill="#DDC3C3" fill-opacity="0.78" cx="23.597" cy="55.498" rx="9.293" ry="1.524"/>
-                    <g id="blush_4_" transform="translate(10.773134, 28.093620)">
-                      <ellipse id="Oval-4_8_" fill="#FF8686" cx="2.75" cy="0.633" rx="2.751" ry="1"/>
-                      <ellipse id="Oval-4_9_" fill="#FF8686" cx="21.088" cy="0.886" rx="2.75" ry="1"/>
-                    </g>
+                  <ellipse id="Oval" fill="url(#Oval_13_)" stroke="#4A4A4A" stroke-width="4" cx="44.384" cy="53.832" rx="44.384" ry="38.741"/>
+                  <g id="Eyelash-Right" transform="translate(54.603865, 35.371179)">
+                    <path id="Path-5" fill="none" stroke="#4A4A4A" stroke-width="2" d="M0.142,4.511c2.652,1.371,4.136,0.303,4.452-3.207"/>
+                    <path id="Path-5_1_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M2.207,3.436c1.945,2.265,3.721,1.83,5.329-1.307"/>
+                    <path id="Path-5_2_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M1.979,5.162c1.147,3.516,3.8,3.164,7.957-1.056"/>
                   </g>
-                  <path id="Rectangle-5_3_" fill="#FFFFFF" d="M37.715,6.218l0.886,0.237l-2.816,10.512l-0.886-0.236L37.715,6.218z M54.74,18.549
-                  l0.614,0.682l-8.088,7.282l-0.613-0.682L54.74,18.549z M0.008,17.525l0.589-0.702l8.337,6.995l-0.589,0.703L0.008,17.525z
-                  M17.285,5.866l0.872-0.283l3.363,10.351l-0.872,0.283L17.285,5.866z"/>
-                  <ellipse id="Oval_11_" fill="#FFFFFF" cx="16.904" cy="1.519" rx="1.376" ry="1.519"/>
-                  <ellipse id="Oval_12_" fill="#FFFFFF" cx="39.139" cy="1.771" rx="1.375" ry="1.519"/>
-                </g>
-                <g id="Rectangle-7">
-                  <g>
-                    <rect id="path-6" x="280" y="193" fill="#D8D8D8" width="18" height="3"/>
+
+                  <g id="Eyelash-Left" transform="translate(26.012077, 39.615721) scale(-1, 1) translate(-26.012077, -39.615721) translate(21.067633, 34.899563)">
+                    <path id="Path-5_3_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M0.141,4.511c2.652,1.372,4.136,0.303,4.452-3.207"/>
+                    <path id="Path-5_4_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M2.207,3.435c1.945,2.266,3.721,1.83,5.329-1.305"/>
+                    <path id="Path-5_5_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M1.979,5.162c1.147,3.516,3.8,3.164,7.957-1.055"/>
                   </g>
-                  <rect x="285" y="198" fill="none" stroke="#4A4A4A" stroke-width="10" width="8" height="1"/>
+                  <g id="Eyes" transform="translate(22.357488, 37.257642)">
+                    <ellipse id="Oval-2" fill="#FFFFFF" cx="5.97" cy="6.548" rx="5.97" ry="6.548"/>
+                    <ellipse id="Oval-2_1_" fill="#4A4A4A" cx="6.292" cy="8.317" rx="2.422" ry="2.657"/>
+                    <ellipse id="Oval-2_2_" fill="#FFFFFF" cx="35.173" cy="6.983" rx="5.506" ry="6.04"/>
+                    <path id="Oval-2_3_" fill="#4A4A4A" d="M35.098,10.974c1.338,0,2.422-1.189,2.422-2.657s-1.084-2.657-2.422-2.657
+                    c-1.337,0-2.422,1.189-2.422,2.657S33.761,10.974,35.098,10.974z"/>
+                  </g>
+                  <ellipse id="Oval-3" fill="#DDC3C3" fill-opacity="0.78" cx="44.262" cy="103.415" rx="17.43" ry="2.84"/>
+                  <g id="blush" transform="translate(20.207729, 52.349345)">
+                    <ellipse id="Oval-4" fill="#FF8686" cx="5.159" cy="1.179" rx="5.16" ry="1.179"/>
+                    <ellipse id="Oval-4_1_" fill="#FF8686" cx="39.556" cy="1.651" rx="5.159" ry="1.179"/>
+                  </g>
+                  <path id="Path-4" fill="#FFFFFF" stroke="#4A4A4A" stroke-width="3" d="M37.406,62.726h6.173h7.638
+                  c-2.653,5.053-4.955,7.579-6.906,7.579C42.361,70.305,40.059,67.778,37.406,62.726z"/>
                 </g>
-                <path id="Path-6" fill="none" stroke="#4A4A4A" stroke-width="10" d="M0,0"/>
-                <path id="Path-7_1_" fill="none" stroke="#4A4A4A" stroke-width="4" d="M64,160.711c2.676-10.439,7.233-9.932,11.805-0.57"/>
-                <path id="Path-7_2_" fill="none" stroke="#4A4A4A" stroke-width="4" d="M58.192,179.617c-3.218,10.287-7.743,9.541-11.819-0.047"
-                />
-                <path id="Path-7_3_" fill="none" stroke="#4A4A4A" stroke-width="4" d="M30,159.711c2.676-10.439,7.233-9.932,11.805-0.57"/>
+                <path id="Rectangle-5" fill="#FFFFFF" d="M70.448,11.614l1.654,0.443l-5.261,19.636l-1.654-0.443L70.448,11.614z M102.25,34.647
+                l1.146,1.272L88.289,49.522l-1.146-1.272L102.25,34.647z M0.015,32.736l1.101-1.312l15.573,13.067l-1.101,1.312L0.015,32.736z
+                M32.288,10.958l1.629-0.529l6.282,19.333l-1.629,0.529L32.288,10.958z"/>
+                <ellipse id="Oval_1_" fill="#FFFFFF" cx="31.576" cy="2.836" rx="2.569" ry="2.836"/>
+                <ellipse id="Oval_2_" fill="#FFFFFF" cx="73.107" cy="3.309" rx="2.569" ry="2.837"/>
               </g>
+              <g id="MAMATOMATO" transform="translate(91.000000, 0.000000)">
+                <g id="Tomato-_x2F_-Cartoon-_x2F_-Girl_1_" transform="translate(11.587121, 23.503588)">
+                  <g id="crown_1_" transform="translate(43.992334, 7.806781)">
+                    <g id="Path-3_1_">
+                      <g>
+                        <polygon id="path-3" fill="#23A613" stroke="#4A4A4A" points="16.492,20.906 11.109,8.022 28.958,14.464 41.054,0.129
+                        50.376,14.464 60.716,8.022 57.927,20.906 								"/>
+                      </g>
+                      <g>
+                        <polygon id="path-3_1_" fill="none" stroke="#4A4A4A" stroke-width="3" points="16.492,20.906 11.109,8.022 28.958,14.464
+                        41.054,0.129 50.376,14.464 60.716,8.022 57.927,20.906 								"/>
+                      </g>
+                    </g>
+                    <polygon id="Triangle_2_" fill="#23A613" stroke="#4A4A4A" stroke-width="3" points="70.033,9.699 59.07,35.786
+                    49.952,29.636 						"/>
+                    <polygon id="Triangle_3_" fill="#23A613" stroke="#4A4A4A" stroke-width="3" points="3.827,9.467 14.79,35.554 23.907,29.404
+                    "/>
+                  </g>
+
+                  <linearGradient id="Oval_14_" gradientUnits="userSpaceOnUse" x1="-260.9275" y1="435.8255" x2="-260.9275" y2="434.8427" gradientTransform="matrix(162.191 0 0 -142.5078 42401.2227 62136.1328)">
+                    <stop  offset="0" style="stop-color:#EB6464"/>
+                    <stop  offset="1" style="stop-color:#AD0A38"/>
+                  </linearGradient>
+
+                  <ellipse id="Oval_3_" fill="url(#Oval_14_)" stroke="#4A4A4A" stroke-width="4" cx="81.095" cy="99.011" rx="81.096" ry="71.254"/>
+
+                  <g id="Eyelash-Left_1_" transform="translate(47.527432, 72.863294) scale(-1, 1) translate(-47.527432, -72.863294) translate(38.493292, 64.189092)">
+                    <path id="Path-5_6_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M0.255,8.3c4.843,2.517,7.557,0.549,8.142-5.906"/>
+                    <path id="Path-5_7_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M4.021,6.332c3.547,4.148,6.801,3.34,9.761-2.426"/>
+                    <path id="Path-5_8_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M3.588,9.515c2.083,6.436,6.949,5.775,14.598-1.981"/>
+                  </g>
+                  <g id="Eyes_1_" transform="translate(40.850025, 68.526193)">
+                    <ellipse id="Oval-2_4_" fill="#FFFFFF" cx="10.908" cy="12.044" rx="10.908" ry="12.044"/>
+                    <ellipse id="Oval-2_5_" fill="#4A4A4A" cx="11.496" cy="15.296" rx="4.426" ry="4.887"/>
+                  </g>
+                  <ellipse id="Oval-3_1_" fill="#DDC3C3" fill-opacity="0.78" cx="80.872" cy="190.206" rx="31.847" ry="5.223"/>
+                  <g id="blush_1_" transform="translate(36.922138, 96.283638)">
+                    <ellipse id="Oval-4_2_" fill="#FF8686" cx="9.427" cy="2.169" rx="9.427" ry="2.169"/>
+                    <ellipse id="Oval-4_3_" fill="#FF8686" cx="72.273" cy="3.036" rx="9.427" ry="2.169"/>
+                  </g>
+                  <path id="Path-2" fill="#FF8686" d="M0,0"/>
+                  <path id="Path-4_1_" fill="#FFFFFF" stroke="#4A4A4A" stroke-width="3" d="M68.345,115.367h11.279h13.957
+                  c-4.849,9.293-9.055,13.941-12.618,13.941S73.194,124.66,68.345,115.367z"/>
+                </g>
+                <path id="Rectangle-5_1_" fill="#FFFFFF" d="M129.26,2.31l3.035,0.813l-9.654,36.028l-3.035-0.813L129.26,2.31z M187.609,44.571
+                l2.103,2.335l-27.719,24.958l-2.103-2.335L187.609,44.571z M0.027,41.065l2.02-2.407l28.573,23.976l-2.02,2.407L0.027,41.065z
+                M59.242,1.105l2.989-0.971l11.526,35.474l-2.989,0.971L59.242,1.105z"/>
+              </g>
+              <polygon id="Star" fill="#FFFFFF" points="237.246,116.791 234.004,118.602 234.623,114.766 232,112.049 235.625,111.49
+              237.246,108 238.867,111.49 242.491,112.049 239.869,114.766 240.488,118.602 			"/>
+              <g id="baby2" transform="translate(257.000000, 143.000000)">
+                <g id="Tomato-_x2F_-Cartoon-_x2F_-Girl_2_" transform="translate(0.544470, 1.669913)">
+                  <g id="crown_2_" transform="translate(17.253799, 3.061821)">
+                    <g id="Path-3_2_">
+                      <g>
+                        <polygon id="path-4" fill="#23A613" stroke="#4A4A4A" points="6.468,8.2 4.357,3.146 11.357,5.673 16.102,0.05
+                        19.757,5.673 23.813,3.146 22.719,8.2 								"/>
+                      </g>
+                      <g>
+                        <polygon id="path-4_1_" fill="none" stroke="#4A4A4A" stroke-width="3" points="6.468,8.2 4.357,3.146 11.357,5.673
+                        16.102,0.05 19.757,5.673 23.813,3.146 22.719,8.2 								"/>
+                      </g>
+                    </g>
+                    <polygon id="Triangle_4_" fill="#23A613" stroke="#4A4A4A" stroke-width="3" points="27.467,3.803 23.168,14.036
+                    19.591,11.624 						"/>
+                    <polygon id="Triangle_5_" fill="#23A613" stroke="#4A4A4A" stroke-width="3" points="1.501,3.714 5.8,13.944 9.377,11.532
+                    "/>
+                  </g>
+
+                  <linearGradient id="Oval_15_" gradientUnits="userSpaceOnUse" x1="-414.8618" y1="311.293" x2="-414.8618" y2="310.3102" gradientTransform="matrix(63.6113 0 0 -55.8916 26421.7441 17409.5215)">
+                    <stop  offset="0" style="stop-color:#EB6464"/>
+                    <stop  offset="1" style="stop-color:#AD0A38"/>
+                  </linearGradient>
+
+                  <ellipse id="Oval_4_" fill="url(#Oval_15_)" stroke="#4A4A4A" stroke-width="4" cx="31.805" cy="38.832" rx="31.807" ry="27.945"/>
+                  <g id="Eyelash-Right_1_" transform="translate(39.129151, 25.515172)">
+                    <path id="Path-5_9_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M0.1,3.255C1.999,4.243,3.064,3.47,3.293,0.939"/>
+                    <path id="Path-5_10_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M1.577,2.483C2.968,4.11,4.244,3.793,5.406,1.532"/>
+                    <path id="Path-5_11_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M1.407,3.732c0.816,2.524,2.726,2.265,5.725-0.777"/>
+                  </g>
+
+                  <g id="Eyelash-Left_2_" transform="translate(18.640265, 28.576993) scale(-1, 1) translate(-18.640265, -28.576993) translate(15.097074, 25.174970)">
+                    <path id="Path-5_12_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M0.1,3.255c1.899,0.988,2.964,0.216,3.193-2.316"/>
+                    <path id="Path-5_13_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M1.578,2.483C2.968,4.11,4.245,3.794,5.406,1.532"/>
+                    <path id="Path-5_14_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M1.408,3.731c0.816,2.524,2.725,2.266,5.725-0.777"/>
+                  </g>
+                  <g id="Eyes_2_" transform="translate(16.021385, 26.875982)">
+                    <ellipse id="Oval-2_6_" fill="#FFFFFF" cx="4.278" cy="4.724" rx="4.277" ry="4.724"/>
+                    <ellipse id="Oval-2_7_" fill="#4A4A4A" cx="4.508" cy="5.999" rx="1.736" ry="1.916"/>
+                    <ellipse id="Oval-2_8_" fill="#FFFFFF" cx="25.205" cy="5.037" rx="3.946" ry="4.356"/>
+                    <path id="Oval-2_9_" fill="#4A4A4A" d="M25.152,7.915c0.958,0,1.735-0.857,1.735-1.916s-0.777-1.916-1.735-1.916
+                    c-0.959,0-1.735,0.857-1.735,1.916S24.193,7.915,25.152,7.915z"/>
+                  </g>
+                  <ellipse id="Oval-3_2_" fill="#DDC3C3" fill-opacity="0.78" cx="31.718" cy="74.599" rx="12.49" ry="2.048"/>
+                  <g id="blush_2_" transform="translate(14.480867, 37.762455)">
+                    <ellipse id="Oval-4_4_" fill="#FF8686" cx="3.697" cy="0.851" rx="3.697" ry="1"/>
+                    <ellipse id="Oval-4_5_" fill="#FF8686" cx="28.346" cy="1.191" rx="3.697" ry="1"/>
+                  </g>
+                </g>
+                <ellipse id="Oval_5_" fill="#FFFFFF" cx="25.849" cy="2.041" rx="1.849" ry="2.041"/>
+                <ellipse id="Oval_6_" fill="#FFFFFF" cx="43.849" cy="2.041" rx="1.849" ry="2.041"/>
+              </g>
+              <g id="Baby1tomato" transform="translate(0.000000, 91.000000)">
+                <g id="Tomato-_x2F_-Cartoon-_x2F_-Girl_3_" transform="translate(6.315151, 23.165079)">
+                  <g id="crown_3_" transform="translate(23.976468, 4.254810)">
+                    <g id="Path-3_3_">
+                      <g>
+                        <polygon id="path-5" fill="#23A613" stroke="#4A4A4A" points="8.989,11.395 6.054,4.372 15.782,7.883 22.375,0.07
+                        27.455,7.883 33.091,4.372 31.571,11.395 								"/>
+                      </g>
+                      <g>
+                        <polygon id="path-5_1_" fill="none" stroke="#4A4A4A" stroke-width="3" points="8.989,11.395 6.054,4.372 15.782,7.883
+                        22.375,0.07 27.455,7.883 33.091,4.372 31.571,11.395 								"/>
+                      </g>
+                    </g>
+                    <polygon id="Triangle_6_" fill="#23A613" stroke="#4A4A4A" stroke-width="3" points="38.169,5.286 32.194,19.504
+                    27.225,16.152 						"/>
+                    <polygon id="Triangle_7_" fill="#23A613" stroke="#4A4A4A" stroke-width="3" points="2.086,5.16 8.06,19.377 13.03,16.025
+                    "/>
+                  </g>
+
+                  <linearGradient id="Oval_16_" gradientUnits="userSpaceOnUse" x1="-164.1042" y1="343.3506" x2="-164.1042" y2="342.3678" gradientTransform="matrix(88.3965 0 0 -77.6688 14550.4736 26682.7441)">
+                    <stop  offset="0" style="stop-color:#EB6464"/>
+                    <stop  offset="1" style="stop-color:#AD0A38"/>
+                  </linearGradient>
+
+                  <ellipse id="Oval_7_" fill="url(#Oval_16_)" stroke="#4A4A4A" stroke-width="4" cx="44.198" cy="53.962" rx="44.198" ry="38.834"/>
+                  <ellipse id="Oval-3_3_" fill="#DDC3C3" fill-opacity="0.78" cx="44.076" cy="103.665" rx="17.357" ry="2.846"/>
+                  <g id="blush_3_" transform="translate(20.123107, 52.475996)">
+                    <ellipse id="Oval-4_6_" fill="#FF8686" cx="5.138" cy="1.182" rx="5.138" ry="1.182"/>
+                    <ellipse id="Oval-4_7_" fill="#FF8686" cx="39.39" cy="1.654" rx="5.138" ry="1.182"/>
+                  </g>
+                </g>
+                <path id="Rectangle-5_2_" fill="#FFFFFF" d="M70.448,11.614l1.654,0.443l-5.261,19.636l-1.654-0.443L70.448,11.614z
+                M102.25,34.647l1.146,1.272L88.289,49.522l-1.146-1.272L102.25,34.647z M0.015,32.736l1.101-1.312l15.573,13.067l-1.101,1.312
+                L0.015,32.736z M32.288,10.958l1.629-0.529l6.282,19.333l-1.629,0.529L32.288,10.958z"/>
+                <ellipse id="Oval_8_" fill="#FFFFFF" cx="31.576" cy="2.836" rx="2.569" ry="2.836"/>
+                <ellipse id="Oval_9_" fill="#FFFFFF" cx="73.107" cy="3.309" rx="2.569" ry="2.837"/>
+              </g>
+              <path id="Path-7" fill="none" stroke="#4A4A4A" stroke-width="4" d="M203.53,107.143c11.829-15.59,18.677-13.262,20.543,6.985"/>
+              <g id="BABY3tomato" transform="translate(324.000000, 152.000000)">
+                <g id="Tomato-_x2F_-Cartoon-_x2F_-Girl_4_" transform="translate(3.380888, 12.401688)">
+                  <g id="crown_4_" transform="translate(12.836074, 2.277861)">
+                    <polygon id="Path-3_4_" fill="#23A613" stroke="#4A4A4A" points="4.812,6.1 3.241,2.34 8.449,4.221 11.978,0.037
+                    14.698,4.221 17.716,2.34 16.902,6.1 						"/>
+                    <polygon id="Triangle_8_" fill="#23A613" stroke="#4A4A4A" points="20.434,2.83 17.235,10.442 14.575,8.647 						"/>
+                    <polygon id="Triangle_9_" fill="#23A613" stroke="#4A4A4A" points="1.117,2.762 4.315,10.374 6.975,8.58 						"/>
+                  </g>
+
+                  <linearGradient id="Oval_17_" gradientUnits="userSpaceOnUse" x1="-484.1206" y1="289.655" x2="-484.1206" y2="288.6722" gradientTransform="matrix(47.3241 0 0 -41.5809 22934.1777 12052.2119)">
+                    <stop  offset="0" style="stop-color:#EB6464"/>
+                    <stop  offset="1" style="stop-color:#AD0A38"/>
+                  </linearGradient>
+
+                  <ellipse id="Oval_10_" fill="url(#Oval_17_)" stroke="#4A4A4A" stroke-width="3" cx="23.662" cy="28.89" rx="23.662" ry="20.791"/>
+                  <g id="Eyelash-Right_2_" transform="translate(29.110383, 18.982176)">
+                    <path id="Path-5_15_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M0.074,2.422c1.413,0.734,2.205,0.16,2.376-1.724"/>
+                    <path id="Path-5_16_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M1.173,1.848c1.035,1.21,1.984,0.974,2.849-0.708"/>
+                    <path id="Path-5_17_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M1.047,2.776c0.607,1.878,2.027,1.686,4.26-0.578"/>
+                  </g>
+
+                  <g id="Eyelash-Left_3_" transform="translate(13.867545, 21.260037) scale(-1, 1) translate(-13.867545, -21.260037) translate(11.231565, 18.729080)">
+                    <path id="Path-5_18_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M0.074,2.422c1.414,0.734,2.205,0.16,2.376-1.724"/>
+                    <path id="Path-5_19_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M1.173,1.848c1.035,1.21,1.984,0.975,2.848-0.708"/>
+                    <path id="Path-5_20_" fill="none" stroke="#4A4A4A" stroke-width="2" d="M1.046,2.776c0.608,1.878,2.028,1.685,4.26-0.578"/>
+                  </g>
+                  <g id="Eyes_3_" transform="translate(11.919212, 19.994559)">
+                    <ellipse id="Oval-2_10_" fill="#FFFFFF" cx="3.182" cy="3.514" rx="3.183" ry="3.514"/>
+                    <ellipse id="Oval-2_11_" fill="#4A4A4A" cx="3.354" cy="4.463" rx="1.291" ry="1.426"/>
+                    <ellipse id="Oval-2_12_" fill="#FFFFFF" cx="18.752" cy="3.747" rx="2.936" ry="3.241"/>
+                    <path id="Oval-2_13_" fill="#4A4A4A" d="M18.712,5.889c0.713,0,1.291-0.639,1.291-1.426s-0.578-1.426-1.291-1.426
+                    s-1.291,0.639-1.291,1.426S17.999,5.889,18.712,5.889z"/>
+                  </g>
+                  <ellipse id="Oval-3_4_" fill="#DDC3C3" fill-opacity="0.78" cx="23.597" cy="55.498" rx="9.293" ry="1.524"/>
+                  <g id="blush_4_" transform="translate(10.773134, 28.093620)">
+                    <ellipse id="Oval-4_8_" fill="#FF8686" cx="2.75" cy="0.633" rx="2.751" ry="1"/>
+                    <ellipse id="Oval-4_9_" fill="#FF8686" cx="21.088" cy="0.886" rx="2.75" ry="1"/>
+                  </g>
+                </g>
+                <path id="Rectangle-5_3_" fill="#FFFFFF" d="M37.715,6.218l0.886,0.237l-2.816,10.512l-0.886-0.236L37.715,6.218z M54.74,18.549
+                l0.614,0.682l-8.088,7.282l-0.613-0.682L54.74,18.549z M0.008,17.525l0.589-0.702l8.337,6.995l-0.589,0.703L0.008,17.525z
+                M17.285,5.866l0.872-0.283l3.363,10.351l-0.872,0.283L17.285,5.866z"/>
+                <ellipse id="Oval_11_" fill="#FFFFFF" cx="16.904" cy="1.519" rx="1.376" ry="1.519"/>
+                <ellipse id="Oval_12_" fill="#FFFFFF" cx="39.139" cy="1.771" rx="1.375" ry="1.519"/>
+              </g>
+              <g id="Rectangle-7">
+                <g>
+                  <rect id="path-6" x="280" y="193" fill="#D8D8D8" width="18" height="3"/>
+                </g>
+                <rect x="285" y="198" fill="none" stroke="#4A4A4A" stroke-width="10" width="8" height="1"/>
+              </g>
+              <path id="Path-6" fill="none" stroke="#4A4A4A" stroke-width="10" d="M0,0"/>
+              <path id="Path-7_1_" fill="none" stroke="#4A4A4A" stroke-width="4" d="M64,160.711c2.676-10.439,7.233-9.932,11.805-0.57"/>
+              <path id="Path-7_2_" fill="none" stroke="#4A4A4A" stroke-width="4" d="M58.192,179.617c-3.218,10.287-7.743,9.541-11.819-0.047"
+              />
+              <path id="Path-7_3_" fill="none" stroke="#4A4A4A" stroke-width="4" d="M30,159.711c2.676-10.439,7.233-9.932,11.805-0.57"/>
             </g>
           </g>
-        </svg>
-      </div> <!-- tomato-family-container-end -->
-    </div> <!-- App Settings End -->
+        </g>
+      </svg>
+    </div> <!-- tomato-family-container-end -->
+  </div> <!-- App Settings End -->
+</div> <!-- Settings-display end -->
 
-    <script src="javascript.js"></script>
+  <script src="javascript.js"></script>
 </body>
 </html>
