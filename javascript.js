@@ -67,3 +67,25 @@ var breakTimer = 0
 
 var breakInput1 = document.getElementsByClassName('break-input-1')[0];
 var breakInput2 = document.getElementsByClassName('break-input-2')[0];
+
+var increaseBreakTimer = function(value) {
+   breakTimer += 1;
+
+}
+
+breakUpArrow.onclick = function() {
+  increaseBreakTimer();
+  breakInput1.innerHTML = breakTimer
+
+}
+
+var decreaseBreakTimer = function(value) {
+   breakTimer -= 1;
+
+}
+
+breakDownArrow.onclick = function() {
+  decreaseBreakTimer();
+  breakInput1.innerHTML = breakTimer
+
+}
