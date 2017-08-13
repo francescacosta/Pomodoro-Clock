@@ -30,36 +30,43 @@ var pomodoroInput2 = document.getElementsByClassName('pomodoro-input-2')[0];
 
 
 var increaseTimer = function(value) {
-   pomodoroTimer += 1;
+  if (pomodoroTimer > 99) {
+    return;
+  }
+  pomodoroTimer += 1;
+}
 
-   if (pomodoroTimer = 99) {
-     return;
-   };
+var updatePomodoroTimer = function(value) {
+  var pomodoroStr = pomodoroTimer.toString()
+
+  if (pomodoroStr.length === 1) {
+    pomodoroInput2.innerHTML = '0'
+    pomodoroInput1.innerHTML = pomodoroStr
+  } else if (pomodoroStr.length === 2) {
+    pomodoroInput1.innerHTML = pomodoroStr[1]
+    pomodoroInput2.innerHTML = pomodoroStr[0]
+  }
 }
 
 upArrow.onclick = function() {
   increaseTimer();
-  console.log(pomodoroTimer);
-  pomodoroInput1.innerHTML = pomodoroTimer
-
+  updatePomodoroTimer();
 }
 
 var decreaseTimer = function(value) {
-   pomodoroTimer -= 1;
-
-   if (pomodoroTimer = 0) {
-     return;
-   };
+  if (pomodoroTimer <= 0) {
+    return;
+  }
+  pomodoroTimer -= 1;
 }
 
 downArrow.onclick = function() {
   decreaseTimer();
-  console.log(pomodoroTimer);
-  pomodoroInput1.innerHTML = pomodoroTimer
+  updatePomodoroTimer();
 
 }
 
-// BREAK TIMER
+// BREAK TIMER VARIABLES
 
 var breakUpArrow = document.getElementsByClassName('break-arrow-up')[0];
 var breakDownArrow = document.getElementsByClassName('break-arrow-down')[0];
@@ -68,9 +75,14 @@ var breakTimer = 0
 var breakInput1 = document.getElementsByClassName('break-input-1')[0];
 var breakInput2 = document.getElementsByClassName('break-input-2')[0];
 
-var increaseBreakTimer = function(value) {
-   breakTimer += 1;
+// BREAK TIMER FUNCTIONS
 
+var increaseBreakTimer = function(value) {
+  if (breakTimer === 9) {
+    return;
+  }
+
+  breakTimer += 1;
 }
 
 breakUpArrow.onclick = function() {
@@ -80,6 +92,9 @@ breakUpArrow.onclick = function() {
 }
 
 var decreaseBreakTimer = function(value) {
+  if (breakTimer === 0) {
+    return;
+  }
    breakTimer -= 1;
 
 }
