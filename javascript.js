@@ -78,21 +78,32 @@ var breakInput2 = document.getElementsByClassName('break-input-2')[0];
 // BREAK TIMER FUNCTIONS
 
 var increaseBreakTimer = function(value) {
-  if (breakTimer === 9) {
+  if (breakTimer > 99) {
     return;
   }
 
   breakTimer += 1;
 }
 
+var updateBreakTimer = function(value) {
+  var breakStr = breakTimer.toString()
+
+  if (breakStr.length === 1) {
+    breakInput2.innerHTML = '0'
+    breakInput1.innerHTML = breakStr
+  } else if (breakStr.length === 2) {
+    breakInput1.innerHTML = breakStr[1]
+    breakInput2.innerHTML = breakStr[0]
+  }
+}
+
 breakUpArrow.onclick = function() {
   increaseBreakTimer();
-  breakInput1.innerHTML = breakTimer
-
+  updateBreakTimer();
 }
 
 var decreaseBreakTimer = function(value) {
-  if (breakTimer === 0) {
+  if (breakTimer <= 0) {
     return;
   }
    breakTimer -= 1;
@@ -101,6 +112,5 @@ var decreaseBreakTimer = function(value) {
 
 breakDownArrow.onclick = function() {
   decreaseBreakTimer();
-  breakInput1.innerHTML = breakTimer
-
+  updateBreakTimer();
 }
