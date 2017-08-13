@@ -20,7 +20,7 @@ timerCancelButton.onclick = function() {
   timer.innerHTML = "00:00";
 }
 
-// POMODORO TIMER
+// POMODORO TIMER VARIABLES
 var upArrow = document.getElementsByClassName('pomodoro-arrow-up')[0];
 var downArrow = document.getElementsByClassName('pomodoro-arrow-down')[0];
 var pomodoroTimer = 0
@@ -28,7 +28,7 @@ var pomodoroTimer = 0
 var pomodoroInput1 = document.getElementsByClassName('pomodoro-input-1')[0];
 var pomodoroInput2 = document.getElementsByClassName('pomodoro-input-2')[0];
 
-
+// POMODORO TIMER FUNCTIONS
 var increaseTimer = function(value) {
   if (pomodoroTimer > 99) {
     return;
