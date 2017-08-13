@@ -36,10 +36,37 @@ hr {
   cursor: pointer;
 }
 
+.column-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .tomato-1 {
   margin-left: auto;
   margin-right: auto;
   padding-top: 15px;
+}
+
+.start {
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  color: #FFFFFF;
+  letter-spacing: 1.39px;
+  text-align: center;
+  background-color: #bd3c60;
+  margin-top: 10px;
+  margin-bottom: -20px;
+  padding: 5px;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.start:hover {
+  background-color: #D0768F;
+  transition: 0.5s;
 }
 
 .timer-container {
