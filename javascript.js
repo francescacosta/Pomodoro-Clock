@@ -1,4 +1,4 @@
-//Variables
+// General Variables
 var settingsButton = document.getElementsByClassName('settings-cog')[0];
 var appScreen = document.getElementsByClassName('app-display')[0];
 var settingsScreen = document.getElementsByClassName('settings-display')[0];
@@ -23,13 +23,13 @@ timerCancelButton.onclick = function() {
 // POMODORO TIMER VARIABLES
 var upArrow = document.getElementsByClassName('pomodoro-arrow-up')[0];
 var downArrow = document.getElementsByClassName('pomodoro-arrow-down')[0];
-var pomodoroTimer = 0
+var pomodoroTimer = 24
 
 var pomodoroInput1 = document.getElementsByClassName('pomodoro-input-1')[0];
 var pomodoroInput2 = document.getElementsByClassName('pomodoro-input-2')[0];
 
 // POMODORO TIMER FUNCTIONS
-var increaseTimer = function(value) {
+var increaseTimer = function() {
   if (pomodoroTimer > 99) {
     return;
   }
@@ -70,7 +70,7 @@ downArrow.onclick = function() {
 
 var breakUpArrow = document.getElementsByClassName('break-arrow-up')[0];
 var breakDownArrow = document.getElementsByClassName('break-arrow-down')[0];
-var breakTimer = 0
+var breakTimer = 4
 
 var breakInput1 = document.getElementsByClassName('break-input-1')[0];
 var breakInput2 = document.getElementsByClassName('break-input-2')[0];
@@ -114,3 +114,8 @@ breakDownArrow.onclick = function() {
   decreaseBreakTimer();
   updateBreakTimer();
 }
+
+increaseTimer();
+updatePomodoroTimer();
+increaseBreakTimer();
+updateBreakTimer();
