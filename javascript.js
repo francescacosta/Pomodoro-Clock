@@ -133,7 +133,7 @@ function startTimer(duration) {
     var minutes = 0;
     var seconds = 0;
 
-    refreshIntervalId = setInterval(function () {
+    var calculateTimer = function () {
         minutes = parseInt(timer / 60, 10)
         seconds = parseInt(timer % 60, 10);
 
@@ -145,7 +145,10 @@ function startTimer(duration) {
         if (--timer < 0) {
             timer = duration;
         }
-    }, 1000);
+    }
+
+    calculateTimer();
+    refreshIntervalId = setInterval(calculateTimer, 1000);
 }
 
 // ONLOAD FUNCTIONS
