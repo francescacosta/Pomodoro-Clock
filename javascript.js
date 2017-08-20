@@ -4,7 +4,8 @@ var appScreen = document.getElementsByClassName('app-display')[0];
 var settingsScreen = document.getElementsByClassName('settings-display')[0];
 var backButton = document.getElementsByClassName('back-text')[0];
 var timerCancelButton = document.getElementsByClassName('timer-cancel-button')[0];
-var timer =  document.getElementsByClassName('countdown')[0];
+var timerView =  document.getElementsByClassName('countdown')[0];
+var startButton = document.getElementsByClassName('start')[0];
 
 settingsButton.onclick = function() {
   appScreen.style.display = "none";
@@ -17,8 +18,16 @@ backButton.onclick = function() {
 }
 
 timerCancelButton.onclick = function() {
-  timer.innerHTML = "00:00";
+  clearInterval(refreshIntervalId);
+  timerView.innerHTML = "00:00";
 }
+
+startButton.onclick = function() {
+  var seconds = 60 * pomodoroTimer;
+
+  startTimer(seconds);
+}
+
 
 // POMODORO TIMER VARIABLES
 var upArrow = document.getElementsByClassName('pomodoro-arrow-up')[0];
@@ -115,6 +124,31 @@ breakDownArrow.onclick = function() {
   updateBreakTimer();
 }
 
+//COUNTDOWN VARIABLES
+var refreshIntervalId = ""
+
+// COUNTDOWN TIMER
+function startTimer(duration) {
+    var timer = duration;
+    var minutes = 0;
+    var seconds = 0;
+
+    refreshIntervalId = setInterval(function () {
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        timerView.innerHTML = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+// ONLOAD FUNCTIONS
 increaseTimer();
 updatePomodoroTimer();
 increaseBreakTimer();
