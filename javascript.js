@@ -19,13 +19,16 @@ backButton.onclick = function() {
 
 timerCancelButton.onclick = function() {
   clearInterval(refreshIntervalId);
+
   timerView.innerHTML = "00:00";
+  startButton.style.display = "unset";
 }
 
 startButton.onclick = function() {
   var seconds = 60 * pomodoroTimer;
-
   startTimer(seconds);
+
+  startButton.style.display = "none";
 }
 
 
