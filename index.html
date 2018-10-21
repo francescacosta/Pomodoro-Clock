@@ -11,8 +11,7 @@
   <div class="app-display"> <!-- App-display open-->
     <div class="app">
       <div class="top-container">
-        <span class="daily-goal">SET A GOAL IN SETTINGS</span>
-        <svg class="settings-cog" width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg class="settings-cog" style="display: none" width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g id="Idea1" transform="translate(-354.000000, -15.000000)" fill="#FFFFFF">
               <g id="settings" transform="translate(354.000000, 15.000000)">
@@ -81,109 +80,111 @@
       </div>
 
       <!-- Timer Div and Counter -->
+      <div class="bottom-container">
+        <div class="timer-container">
+          <span class="timer">TIMER</span>
 
-      <div class="timer-container">
-        <span class="timer">TIMER</span>
-
-        <div class="timer-row-flex">
-          <span class="countdown">00:00</span>
-          <svg class="timer-cancel-button" width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <g id="settings-2" transform="translate(-357.000000, -167.000000)">
-                <g id="CANCEL-BUTTON" transform="translate(359.000000, 168.000000)">
-                  <g id="EXIT-BUTTON" transform="translate(0.000000, 0.683212)" stroke-width="3" stroke="white">
-                    <circle id="Oval" cx="11.0841751" cy="11.0841751" r="11.0841751"></circle>
+          <div class="timer-row-flex">
+            <span class="countdown">00:00</span>
+            <svg class="timer-cancel-button" width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="settings-2" transform="translate(-357.000000, -167.000000)">
+                  <g id="CANCEL-BUTTON" transform="translate(359.000000, 168.000000)">
+                    <g id="EXIT-BUTTON" transform="translate(0.000000, 0.683212)" stroke-width="3" stroke="white">
+                      <circle id="Oval" cx="11.0841751" cy="11.0841751" r="11.0841751"></circle>
+                    </g>
+                    <polygon id="Rectangle-5" fill="white" points="15.4296875 6.15234375 16.6992188 7.42750589 6.54296875 17.628803 5.2734375 16.3536409"></polygon>
+                    <polygon id="Rectangle-5" fill="white" points="6.54296875 6.15234375 5.2734375 7.42750589 15.4296875 17.628803 16.6992188 16.3536409"></polygon>
                   </g>
-                  <polygon id="Rectangle-5" fill="white" points="15.4296875 6.15234375 16.6992188 7.42750589 6.54296875 17.628803 5.2734375 16.3536409"></polygon>
-                  <polygon id="Rectangle-5" fill="white" points="6.54296875 6.15234375 5.2734375 7.42750589 15.4296875 17.628803 16.6992188 16.3536409"></polygon>
                 </g>
               </g>
-            </g>
-          </svg>
+            </svg>
+          </div>
         </div>
+
+        <!-- Green Container Contents-->
+
+        <div class="green-container">
+          <div class="text-flex">
+            <span class="green-container-text pomodoro-text-margin">POMODORO</span>
+            <span class="green-container-text break-text-margin">BREAK</span>
+          </div>
+
+          <div class="timer-arrow-flex">  <!-- Wrapping around most as flex -->
+            <div class="pomodoro-box-flex">
+              <div class="pomodoro-box pomodoro-input-2">0</div>
+              <div class="pomodoro-box pomodoro-input-1">0</div>
+            </div>
+
+            <div class="arrow-flex">
+              <svg class="arrow arrow1 pomodoro-arrow-up" width="16px" height="24px" viewBox="0 0 16 24">
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Idea1" transform="translate(-170.000000, -656.000000)">
+                    <g id="timer-choices" transform="translate(53.000000, 624.000000)">
+                      <g id="arrow-up-left" transform="translate(117.000000, 32.000000)">
+                        <rect id="Rectangle-4" fill="#FFFFFF" x="5" y="7" width="5.01171875" height="16.7042079"></rect>
+                        <polygon id="Triangle" fill="#FAF6F6" points="7.59082031 0 15.1816406 7.78217822 0 7.78217822"></polygon>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+
+              <svg class="arrow arrow1 pomodoro-arrow-down" width="16px" height="24px" viewBox="0 0 16 24">
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Idea1" transform="translate(-170.000000, -690.000000)">
+                    <g id="timer-choices" transform="translate(53.000000, 624.000000)">
+                      <g id="arrow-down-left" transform="translate(117.000000, 66.000000)">
+                        <rect id="Rectangle-4" fill="#FFFFFF" x="5" y="0" width="5.01171875" height="16.4848855"></rect>
+                        <polygon id="Triangle" fill="#FAF6F6" points="7.59082031 23.68 0 16 15.1816406 16"></polygon>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+
+            <div class="pomodoro-box-flex">
+              <div class="pomodoro-box break-input-2">0</div>
+              <div class="pomodoro-box break-input-1">0</div>
+            </div>
+
+            <div class="arrow-flex">
+              <svg class="arrow arrow1 break-arrow-up" width="16px" height="24px" viewBox="0 0 16 24">
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Idea1" transform="translate(-170.000000, -656.000000)">
+                    <g id="timer-choices" transform="translate(53.000000, 624.000000)">
+                      <g id="arrow-up-left" transform="translate(117.000000, 32.000000)">
+                        <rect id="Rectangle-4" fill="#FFFFFF" x="5" y="7" width="5.01171875" height="16.7042079"></rect>
+                        <polygon id="Triangle" fill="#FAF6F6" points="7.59082031 0 15.1816406 7.78217822 0 7.78217822"></polygon>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+
+              <svg class="arrow arrow1 break-arrow-down" width="16px" height="24px" viewBox="0 0 16 24">
+                <defs></defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Idea1" transform="translate(-170.000000, -690.000000)">
+                    <g id="timer-choices" transform="translate(53.000000, 624.000000)">
+                      <g id="arrow-down-left" transform="translate(117.000000, 66.000000)">
+                        <rect id="Rectangle-4" fill="#FFFFFF" x="5" y="0" width="5.01171875" height="16.4848855"></rect>
+                        <polygon id="Triangle" fill="#FAF6F6" points="7.59082031 23.68 0 16 15.1816406 16"></polygon>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+
+          </div> <!-- timmer-arrow-flex-end-->
+        </div> <!-- Green Container Div End-->
       </div>
 
-      <!-- Green Container Contents-->
-
-      <div class="green-container">
-        <div class="text-flex">
-          <span class="green-container-text pomodoro-text-margin">POMODORO</span>
-          <span class="green-container-text break-text-margin">BREAK</span>
-        </div>
-
-        <div class="timer-arrow-flex">  <!-- Wrapping around most as flex -->
-          <div class="pomodoro-box-flex">
-            <div class="pomodoro-box pomodoro-input-2">0</div>
-            <div class="pomodoro-box pomodoro-input-1">0</div>
-          </div>
-
-          <div class="arrow-flex">
-            <svg class="arrow arrow1 pomodoro-arrow-up" width="16px" height="24px" viewBox="0 0 16 24">
-              <defs></defs>
-              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="Idea1" transform="translate(-170.000000, -656.000000)">
-                  <g id="timer-choices" transform="translate(53.000000, 624.000000)">
-                    <g id="arrow-up-left" transform="translate(117.000000, 32.000000)">
-                      <rect id="Rectangle-4" fill="#FFFFFF" x="5" y="7" width="5.01171875" height="16.7042079"></rect>
-                      <polygon id="Triangle" fill="#FAF6F6" points="7.59082031 0 15.1816406 7.78217822 0 7.78217822"></polygon>
-                    </g>
-                  </g>
-                </g>
-              </g>
-            </svg>
-
-            <svg class="arrow arrow1 pomodoro-arrow-down" width="16px" height="24px" viewBox="0 0 16 24">
-              <defs></defs>
-              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="Idea1" transform="translate(-170.000000, -690.000000)">
-                  <g id="timer-choices" transform="translate(53.000000, 624.000000)">
-                    <g id="arrow-down-left" transform="translate(117.000000, 66.000000)">
-                      <rect id="Rectangle-4" fill="#FFFFFF" x="5" y="0" width="5.01171875" height="16.4848855"></rect>
-                      <polygon id="Triangle" fill="#FAF6F6" points="7.59082031 23.68 0 16 15.1816406 16"></polygon>
-                    </g>
-                  </g>
-                </g>
-              </g>
-            </svg>
-          </div>
-
-          <div class="pomodoro-box-flex">
-            <div class="pomodoro-box break-input-2">0</div>
-            <div class="pomodoro-box break-input-1">0</div>
-          </div>
-
-          <div class="arrow-flex">
-            <svg class="arrow arrow1 break-arrow-up" width="16px" height="24px" viewBox="0 0 16 24">
-              <defs></defs>
-              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="Idea1" transform="translate(-170.000000, -656.000000)">
-                  <g id="timer-choices" transform="translate(53.000000, 624.000000)">
-                    <g id="arrow-up-left" transform="translate(117.000000, 32.000000)">
-                      <rect id="Rectangle-4" fill="#FFFFFF" x="5" y="7" width="5.01171875" height="16.7042079"></rect>
-                      <polygon id="Triangle" fill="#FAF6F6" points="7.59082031 0 15.1816406 7.78217822 0 7.78217822"></polygon>
-                    </g>
-                  </g>
-                </g>
-              </g>
-            </svg>
-
-            <svg class="arrow arrow1 break-arrow-down" width="16px" height="24px" viewBox="0 0 16 24">
-              <defs></defs>
-              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="Idea1" transform="translate(-170.000000, -690.000000)">
-                  <g id="timer-choices" transform="translate(53.000000, 624.000000)">
-                    <g id="arrow-down-left" transform="translate(117.000000, 66.000000)">
-                      <rect id="Rectangle-4" fill="#FFFFFF" x="5" y="0" width="5.01171875" height="16.4848855"></rect>
-                      <polygon id="Triangle" fill="#FAF6F6" points="7.59082031 23.68 0 16 15.1816406 16"></polygon>
-                    </g>
-                  </g>
-                </g>
-              </g>
-            </svg>
-          </div>
-
-        </div> <!-- timmer-arrow-flex-end-->
-      </div> <!-- Green Container Div End-->
     </div> <!-- App End -->
   </div> <!-- App-display End -->
 
